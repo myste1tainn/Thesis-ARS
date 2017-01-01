@@ -2,7 +2,8 @@
   "name": "Meteor-Ionic2-Starter",
   "version": "0.0.1",
   "scripts": {
-    "start": "npm-run-all build:* --parallel watch:* meteor",
+    "start": "npm-run-all build:* --parallel watch:* mongosetup meteor",
+    "mongosetup": "export MONGO_URL=mongodb://localhost:27017/thesis",
     "meteor": "meteor run",
     "build:ios-css": "node-sass --include-path node_modules/ionic-angular --include-path node_modules/ionicons/dist/scss ../theme/app.ios.scss | postcss --local-plugins --use autoprefixer --output public/stylesheets/ios-bundle.css",
     "build:md-css": "node-sass --include-path node_modules/ionic-angular --include-path node_modules/ionicons/dist/scss ../theme/app.md.scss | postcss --local-plugins --use autoprefixer --output public/stylesheets/md-bundle.css",
