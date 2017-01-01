@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-navbar primary>
+        <button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            {{"home.title" | translate}}
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-card (click)="start()">
+        <ion-list-header>Parse & Feed</ion-list-header>
+        <ion-card-content>
+            Do parse html documents from manual.readyplanet.com,
+            Save data to mongodb and then feed to ElasticSearch
+        </ion-card-content>
+    </ion-card>
+    <ion-card (click)="pushVectorView()">
+        <ion-list-header>Vector create</ion-list-header>
+        <ion-card-content>
+            Create vector (array of vectors) of terms from the indexes
+            within ElasticSearch
+        </ion-card-content>
+    </ion-card>
+</ion-content>

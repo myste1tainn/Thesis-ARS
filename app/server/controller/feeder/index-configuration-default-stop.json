@@ -1,0 +1,44 @@
+{
+  "mappings": {
+    "solution": {
+      "properties": {
+        "name": {
+          "type": "text",
+          "term_vector": "with_positions_offsets_payloads",
+          "store" : true,
+          "analyzer" : "fulltext_analyzer"
+         },
+         "steps": {
+          "type": "text",
+          "term_vector": "with_positions_offsets_payloads",
+          "analyzer" : "fulltext_analyzer"
+        }
+      }
+    }
+  },
+  "settings" : {
+    "index" : {
+      "number_of_shards" : 1,
+      "number_of_replicas" : 0
+    },
+    "analysis": {
+      "filter": {
+        "thai_stop": {
+          "type": "stop",
+          "stopwords": "__thai__"
+        }
+      },
+      "analyzer": {
+        "fulltext_analyzer": {
+          "type": "custom",
+          "tokenizer": "thai",
+          "filter": [
+            "lowercase",
+            "type_as_payload",
+            "thai_stop"
+          ]
+        }
+      }
+    }
+  }
+}

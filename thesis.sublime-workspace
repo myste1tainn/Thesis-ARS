@@ -1,0 +1,1877 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"term",
+				"termKey\tlocal var"
+			],
+			[
+				"Matrix",
+				"MatrixCollection\tlet"
+			],
+			[
+				"connection",
+				"connectionOptions"
+			],
+			[
+				"MONG",
+				"MONGO_OPLOG_URL"
+			],
+			[
+				"mong",
+				"mongoUrl"
+			],
+			[
+				"re",
+				"resolve\tmethod"
+			],
+			[
+				"cap",
+				"captureStackTrace"
+			],
+			[
+				"Mtrix",
+				"MatrixCollection\tlet"
+			],
+			[
+				"find",
+				"findOne\tmethod"
+			],
+			[
+				"for",
+				"forobj\tfor … in … loop"
+			],
+			[
+				"up",
+				"upsert\tmethod"
+			],
+			[
+				"ng2impor",
+				"ng2importrouter\tangular2-import-router"
+			],
+			[
+				"MEteor",
+				"MeteorComponent\talias"
+			],
+			[
+				"Mat",
+				"Matrix\talias"
+			],
+			[
+				"Matri",
+				"MatrixCollection\tlet"
+			],
+			[
+				"ng2",
+				"ng2modelbasic\tangular2-model-basic"
+			],
+			[
+				"ng2import",
+				"ng2importcore\tangular2-import-core"
+			],
+			[
+				"user",
+				"UserEmail\tinterface"
+			],
+			[
+				"me",
+				"methods\tfunction"
+			],
+			[
+				"User",
+				"UserEmail\tinterface"
+			],
+			[
+				"D",
+				"Deferred\tinterface"
+			],
+			[
+				"reply",
+				"replyJSON\tmethod"
+			],
+			[
+				"getAll",
+				"getAllTermVectors\tmethod"
+			],
+			[
+				"const",
+				"constructor\tkeyword"
+			],
+			[
+				"ex",
+				"extends\tkeyword"
+			],
+			[
+				"response",
+				"responseHandler\tproperty"
+			],
+			[
+				"repons",
+				"responseHandler\tproperty"
+			],
+			[
+				"res",
+				"responseHandler\tproperty"
+			],
+			[
+				"wri",
+				"write\tmethod"
+			],
+			[
+				"requ",
+				"Request\tclass"
+			],
+			[
+				"Route",
+				"RouteItem\tclass"
+			],
+			[
+				"conts",
+				"constructor\tkeyword"
+			],
+			[
+				"__con",
+				"__consumptionPool\tvar"
+			],
+			[
+				"Solu",
+				"Solutions\tlet"
+			],
+			[
+				"custom",
+				"custom_thai_stop"
+			],
+			[
+				"stop",
+				"stopwords"
+			],
+			[
+				"__",
+				"__createdCount\tlet"
+			],
+			[
+				"magin-",
+				"margin-bottom"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"solu",
+				"solutionsString\tlocal var"
+			],
+			[
+				"data",
+				"DataModel\ttype parameter"
+			],
+			[
+				"solution",
+				"solutions\tparameter"
+			],
+			[
+				"analy",
+				"analyzerSettings\tgetter"
+			],
+			[
+				"create",
+				"createIndexIfNeeded\tmethod"
+			],
+			[
+				"pa",
+				"parseSideBar\tproperty"
+			],
+			[
+				"parse",
+				"parseSideBar\tparameter"
+			],
+			[
+				"url",
+				"url\tparameter"
+			],
+			[
+				"super",
+				"superUrl\tparameter"
+			],
+			[
+				"imp",
+				"implements\tkeyword"
+			],
+			[
+				"Mon",
+				"MongoError\tclass"
+			],
+			[
+				"Data",
+				"DataModel\ttype parameter"
+			],
+			[
+				"dele",
+				"deleteOne\tmethod"
+			],
+			[
+				"Model",
+				"ModelCollection\tclass"
+			],
+			[
+				"Iter",
+				"IteratorCallback\talias"
+			],
+			[
+				"to",
+				"toString\tmethod"
+			],
+			[
+				"mon",
+				"mongodb\texternal module name"
+			],
+			[
+				"HTt",
+				"HttpModule\talias"
+			],
+			[
+				"Inje",
+				"Injectable\tinterface"
+			],
+			[
+				"Express",
+				"ExpressEngineConfig"
+			],
+			[
+				"updated",
+				"updateDevice"
+			],
+			[
+				"Appli",
+				"ApplicationRef\talias"
+			],
+			[
+				"error",
+				"error_reporting"
+			],
+			[
+				"tbtime",
+				"tbstime"
+			],
+			[
+				"tbime",
+				"tbstime"
+			],
+			[
+				"or",
+				"orWhere"
+			],
+			[
+				"valid",
+				"validBranch"
+			],
+			[
+				"register",
+				"registerCount"
+			],
+			[
+				"regiset",
+				"registerCount"
+			],
+			[
+				"new",
+				"newRegistree"
+			],
+			[
+				"Teammem",
+				"TeamMembers\talias"
+			],
+			[
+				"TeamMember",
+				"TeamMembers\talias"
+			],
+			[
+				"invi",
+				"inviteeEmail\tproperty"
+			],
+			[
+				"inject",
+				"injectHeader\t(app.js)"
+			],
+			[
+				"aom",
+				"aomcamera\t(login.controller.js)"
+			],
+			[
+				"is",
+				"isShowing\tproperty"
+			],
+			[
+				"template",
+				"templateUrl"
+			],
+			[
+				"isSHo",
+				"isShowingChange\t(dashboard.ts)"
+			],
+			[
+				"isSho",
+				"isShowingChange\tproperty"
+			],
+			[
+				"Event",
+				"EventEmitter\talias"
+			],
+			[
+				"clas",
+				"setElementClass\tmethod"
+			],
+			[
+				"Host",
+				"HostListener"
+			],
+			[
+				"Elem",
+				"Element\tinterface"
+			],
+			[
+				"overla",
+				"overlay-bar\t(dashboard.html)"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"Nav",
+				"NavParams"
+			],
+			[
+				"menu",
+				"menuToggle"
+			],
+			[
+				"userService",
+				"userService.load"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"copied",
+				"copiedGroupInfo"
+			],
+			[
+				"question",
+				"questionaire"
+			],
+			[
+				"copie",
+				"copiedGroup"
+			],
+			[
+				"cop",
+				"copied"
+			],
+			[
+				"Question",
+				"Question"
+			],
+			[
+				"Questi",
+				"Questionaire"
+			],
+			[
+				"cpoied",
+				"copiedQuestionaire"
+			],
+			[
+				"cri",
+				"criterion"
+			],
+			[
+				"target",
+				"targetQuestionaire"
+			],
+			[
+				"copei",
+				"copiedQuestion"
+			],
+			[
+				"copi",
+				"copiedQuestion"
+			],
+			[
+				"cope",
+				"copiedQuestionaire"
+			],
+			[
+				"copy",
+				"copyQuestionaire"
+			],
+			[
+				"Que",
+				"QuestionGroup"
+			],
+			[
+				"Quesion",
+				"QuestionGroup"
+			],
+			[
+				"rpor",
+				"reportID"
+			],
+			[
+				"proper",
+				"properQuestionIDsString"
+			],
+			[
+				"report",
+				"reportService"
+			],
+			[
+				"the",
+				"theRightCriterion"
+			],
+			[
+				"criterion",
+				"criterionThatFallsIntoValue\t(Criterion.php)"
+			],
+			[
+				"partici",
+				"participantID\t(ParticipantAnswer.php)"
+			],
+			[
+				"normal",
+				"normalRangeCriteria\t(QuestionGroup.php)"
+			],
+			[
+				"first",
+				"firstGroups"
+			],
+			[
+				"firs",
+				"firstSum"
+			],
+			[
+				"fir",
+				"firstItem"
+			],
+			[
+				"secon",
+				"secondGroups"
+			],
+			[
+				"second",
+				"secondGroups"
+			],
+			[
+				"parti",
+				"participants\t(EQReportController.php)"
+			],
+			[
+				"col",
+				"col-xs-12"
+			],
+			[
+				"pull-",
+				"pull-right"
+			],
+			[
+				"Parti",
+				"ParticipantController"
+			],
+			[
+				"quesion",
+				"questionaire"
+			],
+			[
+				"repor",
+				"reportID"
+			],
+			[
+				"_group",
+				"_groupID"
+			],
+			[
+				"par",
+				"parentID"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"Quest",
+				"Questionaire"
+			],
+			[
+				"cho",
+				"choice"
+			],
+			[
+				"quest",
+				"questionaire"
+			],
+			[
+				"risk",
+				"risk-screening\t(app.routes.js)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 167.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"SHow Er",
+				"TypeScript: Show Error List"
+			],
+			[
+				"show",
+				"TypeScript: Show Error List"
+			],
+			[
+				"show error",
+				"TypeScript: Show Error List"
+			],
+			[
+				"typescrip",
+				"TypeScript: Show Error List"
+			],
+			[
+				"typescript",
+				"TypeScript: Find References"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"implm",
+				"Snippet: imports a module …"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"javascri",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"SQL",
+				"Set Syntax: SQL"
+			],
+			[
+				"reindet",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"JSON",
+				"Set Syntax: JSON"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"Swift",
+				"Set Syntax: Swift"
+			],
+			[
+				"Type",
+				"TypeScript: GoTo Definition"
+			],
+			[
+				"TypeScript",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"Ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"list ",
+				"Package Control: List Packages"
+			],
+			[
+				"objc",
+				"Set Syntax: Objective-C"
+			],
+			[
+				"TypeScrip",
+				"Build With: TypeScript"
+			],
+			[
+				"SCSS",
+				"Set Syntax: SCSS"
+			],
+			[
+				"scss",
+				"Set Syntax: CSS"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"package controll",
+				"Package Control: List Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"remove pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"package",
+				"Install Package Control"
+			],
+			[
+				"todo",
+				"TodoReview: Project Files"
+			],
+			[
+				"TODO",
+				"TodoReview: Project Files"
+			],
+			[
+				"Todo",
+				"TodoReview: Project Files"
+			],
+			[
+				"Java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"Insall",
+				"Package Control: Install Package"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Build",
+				"Build: New Build System"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Object key — key: \"value\""
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 474.0,
+		"history":
+		[
+			"--version",
+			"version",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"echo \"ajsdkfl;\"",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Myste1tainn/Projects/Personal/thesis/app"
+	],
+	"file_history":
+	[
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/controller/feeder/es.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/controller/term-vector-list/term-vector-list.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/publish.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/main.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/lib/collections/matrix.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/components/term-vectors-matrix/term-vectors-matrix.ts",
+		"/Users/Myste1tainn/.meteor/packages/meteor-tool/.1.4.1_3.1uys7qd++os.osx.x86_64+web.browser+web.cordova/mt-os.osx.x86_64/dev_bundle/server-lib/node_modules/fibers/future.js",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/lib/_meteor-ionic-app.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/package.json",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/.meteor/local/build/programs/server/packages/mongo.js",
+		"/Users/Myste1tainn/.meteor/packages/npm-mongo/.2.2.11_1.164bfs3++os+web.browser+web.cordova/npm/node_modules/mongodb-core/lib/error.js",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/.meteor/local/build/programs/server/packages/modules.js",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/node_modules/ts-node/node_modules/make-error/index.js",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/.meteor/local/build/programs/server/npm/node_modules/meteor/npm-mongo/node_modules/mongodb-core/lib/error.js",
+		"/Users/Myste1tainn/.meteor/packages/iron_router/.1.0.13.1vsv90f++os+web.browser+web.cordova/npm/node_modules/body-parser/node_modules/depd/index.js",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/app.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/config/development/settings.json",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/components/term-vectors-matrix/term-vectors-matrix.html",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/controller/parser/parser.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/collection/model.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/collection/solutions.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/collection/db.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/controller/parser/solution-parser.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/controller/feeder/es-feeder.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/.meteor/local/build/programs/server/app/app.js",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/pages/matrix-view/matrix-view.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/pages/matrix-view/matrix-view.html",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/pages/home/home.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/pages/control-panel/control-panel.html",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/pages/control-panel/control-panel.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/components/newcomponent/term-vectors-matrix.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/components/newcomponent/term-vectors-matrix.html",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/node_modules/@angular/forms/src/directives/ng_control.d.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/http/http.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/node_modules/rxjs/src/Observer.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/node_modules/@types/ionic-angular/index.d.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/node_modules/ionic-angular/index.d.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/node_modules/@types/node/index.d.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/pages/home/home.html",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/.meteor/local/dev_bundle/lib/node_modules/npm/html/doc/cli/npm-completion.html",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/components/control-panel/control-panel.html",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/typings/index.d.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/node_modules/@types/meteor/meteor/index.d.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/node_modules/@types/iron-router/types-metadata.json",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/node_modules/@types/iron-router/index.d.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/lib/methods.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/tsconfig.json",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/typings/main.d.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/node_modules/@types/meteor/index.d.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/node_modules/@angular/http/src/headers.d.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/npm-debug.log",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/node_modules/angular2-meteor/dist/meteor_app.d.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/lib/term-vector-list/term-vector-list.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/app.html",
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/.meteor/local/dev_bundle/lib/node_modules/express/lib/router/route.js",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/view/index.html",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/http/routes.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/feeder.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/controller/parser/parser.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/controller/feeder/es-feeder.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/es/index-configuration.json",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/controller/term-vector-list/term-vector-list.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/controller/controller.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/server.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/controller/feeder/es.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/http/http.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/controller/parser/link-parser.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/controller/parser/solution-parser.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/collection/errors.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/controller/parser/solution-parser.js",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/routes/routes.ts",
+		"/Users/Myste1tainn/Projects/oneMobile/RSA/MDCService/RSAMDCService.podspec",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/parser.ts",
+		"/Users/Myste1tainn/Desktop/test-data.txt",
+		"/Users/Myste1tainn/Projects/oneMobile/RSA/MDCService/.gitignore",
+		"/Users/Myste1tainn/Projects/oneMobile/AZConfiguration/AZConfiguration.podspec",
+		"/Users/Myste1tainn/Projects/oneMobile/AZBiz/.gitignore",
+		"/Users/Myste1tainn/Projects/oneMobile/RSA/MDCService/Example/podfile.lock",
+		"/Users/Myste1tainn/Projects/oneMobile/RSA/MDCService/podfile.lock",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/link-parser.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/solution-parser.ts",
+		"/Users/Myste1tainn/Projects/HealthApp/package.json",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/http.ts",
+		"/Users/Myste1tainn/Projects/oneMobile/AZUIKit/AZUIKit.podspec",
+		"/Users/Myste1tainn/Projects/Personal/thesis/podspec",
+		"/Users/Myste1tainn/Downloads/index.html",
+		"/Users/Myste1tainn/Downloads/Test-ISAdvertiserv3_sourcecode.html",
+		"/Applications/MAMP/htdocs/index.html",
+		"/Users/Myste1tainn/Projects/oneMobile/RSA/Essentials/RSAEssentials.podspec",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/collection/db.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/collection/model.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/es-feeder.ts",
+		"/Users/Myste1tainn/Desktop/signature.html",
+		"/Users/Myste1tainn/Library/Mobile Documents/com~apple~mail/Data/V4/Signatures/D51A7AB3-2227-417D-B7D1-B5E9C02AED84.mailsignature",
+		"/Users/Myste1tainn/Projects/oneMobile/AZUIKit/Example/podfile",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/collection/solutions.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/main/collections/errors.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/parser.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/collections/db.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/collections/model.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/index.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/collections/solutions.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/solution-parser.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/db.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/model.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/node_modules/@types/mongodb/index.d.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/http.ts",
+		"/Users/Myste1tainn/.zshrc",
+		"/usr/local/etc/mongod.conf",
+		"/Users/Myste1tainn/Projects/Personal/thesis/node_modules/@angular/http/bundles/http.umd.js",
+		"/Users/Myste1tainn/Projects/Personal/thesis/tsconfig.json",
+		"/Users/Myste1tainn/Projects/Personal/thesis/node_modules/@types/express/index.d.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/core/app/server/html-parser/http.ts",
+		"/Users/Myste1tainn/Projects/Personal/backend-office-major/app/Http/routes.php",
+		"/Users/Myste1tainn/Projects/Personal/backend-office-major/app/Http/Controllers/DataController.php",
+		"/Users/Myste1tainn/Projects/Personal/backend-office-major/.gitignore",
+		"/Users/Myste1tainn/Projects/Personal/backend-office-major/app/Http/Controllers/DeviceController.php",
+		"/Users/Myste1tainn/Projects/Personal/backend-office-major/artisan",
+		"/Users/Myste1tainn/Projects/HealthApp/config.xml",
+		"/Users/Myste1tainn/Projects/HealthApp/www/css/style.css",
+		"/Users/Myste1tainn/Projects/HealthApp/platforms/ios/www/css/style.css",
+		"/Users/Myste1tainn/Projects/oneMobile/RSA/Settings/RSASettings.podspec",
+		"/Users/Myste1tainn/Desktop/rsa-installer",
+		"/Users/Myste1tainn/Projects/oneMobile/RSA/LiveTraffic/Example/Podfile.lock",
+		"/Users/Myste1tainn/Projects/oneMobile/RSA/AroundMe/Example/Podfile.lock",
+		"/Users/Myste1tainn/Projects/oneMobile/RSA/Essentials/Example/Podfile.lock",
+		"/Users/Myste1tainn/Projects/oneMobile/RSA/PrivacyStatement/Example/Podfile.lock",
+		"/Users/Myste1tainn/Projects/oneMobile/RSA/MessageCenter/Example/Podfile.lock"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"/Users/Myste1tainn/Projects/Personal/thesis/app/",
+			"/Users/Myste1tainn/Projects/Personal/thesis/app/server",
+			"/Users/Myste1tainn/Projects/Personal/thesis/app",
+			"/Users/Myste1tainn/Projects/Personal/thesis/app/client",
+			"/Users/Myste1tainn/Projects/Personal/thesis/app/server",
+			"/Users/Myste1tainn/Projects/Personal/thesis/main",
+			"/Users/Myste1tainn/Projects/Personal/thesis/es",
+			"/Users/Myste1tainn/Projects/Personal/thesis/main",
+			"/Users/Myste1tainn/Projects/Personal/thesis/node_modules/@angular/http",
+			"/Users/Myste1tainn/Projects/Personal/thesis/node_modules/angular2-universal",
+			"/Users/Myste1tainn/Projects/Personal/thesis/node_modules/@angular/router",
+			"/Users/Myste1tainn/Projects/oneMobile/RSA/Installer/Example/Configurations",
+			"<open files>",
+			"/Users/Myste1tainn/Projects/Personal/Learn/app/client/pages",
+			"/Users/Myste1tainn/Projects/HealthApp/www/templates",
+			"/Users/Myste1tainn/Projects/HealthApp",
+			"/Users/Myste1tainn/Projects/Personal/Do/app/server",
+			"/Users/Myste1tainn/Projects/Personal/Do/app/client",
+			"/Users/Myste1tainn/Projects/Personal/Do/client",
+			"/Users/Myste1tainn/Projects/Personal/Do/app",
+			"/Users/Myste1tainn/Dropbox/Boilerplates/Sublime Text 3",
+			"/Users/Myste1tainn/Projects/NDHealthApp/www",
+			"/Users/Myste1tainn/Projects/$/ionic2-tutorial/src",
+			"/Users/Myste1tainn/Projects/$/ionic2-tutorial/node_modules/ionic-angular",
+			"/Users/Myste1tainn/Projects/$/ionic2-tutorial/node_modules",
+			"/Users/Myste1tainn/Projects/$/ionic2-tutorial/src",
+			"/Users/Myste1tainn/Projects/$/ionic2-tutorial/src/pages/user-form",
+			"/Users/Myste1tainn/Projects/$/ionic2-tutorial/src",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/public",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/public/js",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/public",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/app",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/public",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/app",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/public",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/app",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/public",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/app",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/public",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/resource",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/resources",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/public",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/resources",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/public",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/resources",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/public",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/resources/views",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/resources",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/public",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/resources/views",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/public",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/app/Http",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/node_modules",
+			"/Users/Akeereena/Projects/$/EQ-SDQ/source/public",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/public",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/database",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/app",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src",
+			"/Users/Akeereena/Desktop/Test/Frameworks/ofxiOS_iphoneos_Debug.framework/Headers",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/public",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/database",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src",
+			"/Users/Akeereena/Projects/INVP Cloud Messaging/3-src/",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/push-send.majorcineplex.com/public",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/push-send.majorcineplex.com/vendor",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/push-send.majorcineplex.com/public",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/push-send.majorcineplex.com/App",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/push-send.majorcineplex.com/vendor",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/push-send.majorcineplex.com/vendor/laravel",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/push-send.majorcineplex.com/vendor/illuminate",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/push-send.majorcineplex.com/vendor/doctrine",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/push-send.majorcineplex.com/vendor",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/push-send.majorcineplex.com/",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/push-send.majorcineplex.com/app",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/push-send.majorcineplex.com/vendor",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/push-send.majorcineplex.com/vender",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/push-send.majorcineplex.com/public",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/push-send.majorcineplex.com/vendor",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/3-src/push-send.majorcineplex.com",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/2. Source/push-send.majorcineplex.com/",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/2. Source/push-send.majorcineplex.com/vendor",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/2. Source/push-send.majorcineplex.com/",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/2. Source/push-send.majorcineplex.com/public",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/2. Source/push-send.majorcineplex.com",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/2. Source/push-send.majorcineplex.com/app",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/2. Source/push-send.majorcineplex.com/appallCampaignsGroupByApplication",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/2. Source/push-send.majorcineplex.com/public/libs",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/2. Source/push-send.majorcineplex.com/public",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/2. Source/push-send.majorcineplex.com",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/2. Source/push-send.majorcineplex.com/vendor",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/2. Source/push-send.majorcineplex.com/public/js",
+			"/Users/Akeereena/Projects/Major Cloud Messaging/2. Source/push-send.majorcineplex.com",
+			"/Applications/MAMP/htdocs/push.smartsign.asia",
+			"/Applications/MAMP/htdocs/push",
+			"/Applications/MAMP/htdocs/push/",
+			"/Applications/MAMP/htdocs/pushnotification/",
+			"/Applications/MAMP/htdocs/pushnotification/resource/css,<open files>",
+			"/Applications/MAMP/htdocs/pushnotification/resource/css",
+			"/Applications/MAMP/htdocs/pushnotification",
+			"/Applications/MAMP/htdocs/pushdev",
+			"/Applications/MAMP/htdocs/pushnotification",
+			"/Applications/MAMP/htdocs/pushdev",
+			"/Users/Akeereena/Documents/#INVP/sublime_sftp_sync/major_cms_server/pushdev",
+			"/Users/Akeereena/Documents/#INVP/sublime_sftp_sync/major_cms_server",
+			"/Users/Akeereena/Documents/#INVP/sublime_sftp_sync/dev.smartsign.asia/pushnotification"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"= \"",
+			"key",
+			"id",
+			"44444",
+			"4444444",
+			"MONGO_URL",
+			"_collection =",
+			"throw new Error(\"Meteor requires document _id fields",
+			"iron:router",
+			"getFileName",
+			"captureStackTrace =",
+			"captureStackTrace",
+			"no collection",
+			"'no collection'",
+			"MongoError.create('no collection')",
+			"MongoError.create('no",
+			"MongoError.create",
+			"err = new MongoError(options.message)",
+			"captureStackTrace",
+			"captureStackTrace(this, MongoError)",
+			"startup",
+			"Meteor.startup",
+			"mongo://",
+			"to mongodb established",
+			"to mongodb",
+			"te",
+			"#row",
+			"#col",
+			"for",
+			";",
+			"td",
+			"newcomponent",
+			"matrix-table",
+			"newpage",
+			"npmRequestOptions",
+			"this.alert",
+			"Organize your Meteor",
+			"Organzie your Meteor",
+			"iron:router",
+			"new App",
+			"App",
+			"../ionic",
+			"./",
+			"Component",
+			"bootstrap",
+			"NgModule",
+			"HomePage",
+			"home",
+			"require:",
+			"require",
+			"boot",
+			"Boot",
+			"IronRouter",
+			"UserEmail",
+			"meteor/",
+			" Email",
+			"Email",
+			"UserEmail",
+			"HTTP",
+			"UserEmail",
+			"cheerio",
+			"http",
+			"'meteor'",
+			"module",
+			"http",
+			"declare module",
+			"['key",
+			"tv",
+			"log",
+			"_id",
+			"./collection/error",
+			" \n",
+			"= ",
+			"=",
+			"VIN",
+			"AZNet",
+			"parseLinks",
+			"__consumptionPool",
+			"__produce",
+			"encode",
+			"allSelected",
+			"URI",
+			"Encoding",
+			"End",
+			"encod",
+			"&amp;",
+			"&",
+			"body",
+			"border.",
+			"color.",
+			"configure",
+			"textField",
+			"ล็อกอิน",
+			"\"",
+			"createIndexIfNeeded",
+			"ๆ",
+			"\t",
+			"padding: 0px;",
+			"70px",
+			"100px",
+			"40px",
+			"3em",
+			"padding: 0px;",
+			"0px;;",
+			"padding: 0px",
+			"20px",
+			"10px",
+			"1em",
+			"2em",
+			"40px",
+			"<td",
+			"span",
+			"4px",
+			"0px",
+			"1px",
+			"3px",
+			"span",
+			"font-weight: bold;",
+			"div",
+			"style=\"font-family: 'Helvetica Neue'",
+			"Neue",
+			"p",
+			"h2",
+			"h1",
+			"func",
+			"var",
+			"this.defer",
+			"deferArray"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"img",
+			"dashboard.html",
+			"user-details",
+			"UserListPage",
+			"UserDetailsPage",
+			"Dashboard",
+			"$scope.form",
+			"\n",
+			"",
+			"formID",
+			"}}",
+			"{{",
+			"",
+			"formService",
+			"}}",
+			"$form",
+			"form",
+			"Form",
+			"}}",
+			"]]",
+			"{{",
+			"Form",
+			"\\t",
+			"'",
+			"\\t",
+			"appID",
+			"->udid",
+			"devices",
+			"test_devices",
+			"campaigns",
+			"queues",
+			"outboxes",
+			"test_queues",
+			"applications",
+			"",
+			"\t",
+			"",
+			"\t",
+			"5299df",
+			"PushPanel",
+			"panelDidDisappear",
+			"panelDidAppear",
+			"/dev/",
+			"pushdev",
+			"/prd/",
+			"pushnotification",
+			"PNApplication",
+			"->ofApp",
+			"\t",
+			"PNSubscribedApplication",
+			"mobile_push_sender_dev",
+			"mobile_push_sender",
+			"$rootPath/pushdev",
+			"soundPackName",
+			",\\n",
+			"\\n",
+			"PNModel"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 72.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.errorlist":
+	{
+		"height": 168.0
+	},
+	"output.exec":
+	{
+		"height": 168.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 168.0
+	},
+	"pinned_build_system": "",
+	"project": "thesis.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"es.ts",
+				"server/controller/feeder/es.ts"
+			],
+			[
+				"main.ts",
+				"server/main.ts"
+			],
+			[
+				"ionic-app",
+				"client/lib/_meteor-ionic-app.ts"
+			],
+			[
+				"app.ts",
+				"client/app.ts"
+			],
+			[
+				"matrix.ts",
+				"lib/collections/matrix.ts"
+			],
+			[
+				"term-list",
+				"server/controller/term-vector-list/term-vector-list.ts"
+			],
+			[
+				"model.ts",
+				"server/collection/model.ts"
+			],
+			[
+				"solution.ts",
+				"server/collection/solutions.ts"
+			],
+			[
+				"db.ts",
+				"server/collection/db.ts"
+			],
+			[
+				"solutions.ts",
+				"server/collection/solutions.ts"
+			],
+			[
+				"term-vec-list",
+				"server/controller/term-vector-list/term-vector-list.ts"
+			],
+			[
+				"parser.ts",
+				"server/controller/parser/parser.ts"
+			],
+			[
+				"solution",
+				"server/controller/parser/solution-parser.ts"
+			],
+			[
+				"es-f",
+				"server/controller/feeder/es-feeder.ts"
+			],
+			[
+				"es-fee",
+				"server/controller/feeder/es-feeder.ts"
+			],
+			[
+				"pub",
+				"server/publish.ts"
+			],
+			[
+				"term-ve-",
+				"server/controller/term-vector-list/term-vector-list.ts"
+			],
+			[
+				"es-feeder",
+				"server/controller/feeder/es-feeder.ts"
+			],
+			[
+				"maints",
+				"server/main.ts"
+			],
+			[
+				"matrix",
+				"lib/collections/matrix.ts"
+			],
+			[
+				"home.ts",
+				"client/pages/home/home.ts"
+			],
+			[
+				"control.html",
+				"client/pages/control-panel/control-panel.html"
+			],
+			[
+				"control-panel",
+				"client/pages/control-panel/control-panel.ts"
+			],
+			[
+				"control.ts",
+				"node_modules/@angular/forms/src/directives/ng_control.d.ts"
+			],
+			[
+				"server.ts",
+				"node_modules/rxjs/src/Observer.ts"
+			],
+			[
+				"http.ts",
+				"server/http/http.ts"
+			],
+			[
+				"maint.s",
+				"server/main.ts"
+			],
+			[
+				"control-pna",
+				"client/pages/control-panel/control-panel.ts"
+			],
+			[
+				"home.html",
+				"client/pages/home/home.html"
+			],
+			[
+				"con.html",
+				".meteor/local/dev_bundle/lib/node_modules/npm/html/doc/cli/npm-completion.html"
+			],
+			[
+				"methods.ts",
+				"lib/methods.ts"
+			],
+			[
+				"header.d.ts",
+				"node_modules/@angular/http/src/headers.d.ts"
+			],
+			[
+				"meteor.d.ts",
+				"node_modules/angular2-meteor/dist/meteor_app.d.ts"
+			],
+			[
+				"http",
+				"server/http/http.ts"
+			],
+			[
+				"es-feed",
+				"server/controller/feeder/es-feeder.ts"
+			],
+			[
+				"app.html",
+				"client/app.html"
+			],
+			[
+				"route",
+				".meteor/local/dev_bundle/lib/node_modules/express/lib/router/route.js"
+			],
+			[
+				"routes",
+				"main/http/routes.ts"
+			],
+			[
+				"es-",
+				"main/controller/feeder/es-feeder.ts"
+			],
+			[
+				"feeder",
+				"feeder.ts"
+			],
+			[
+				"parser",
+				"main/controller/parser/parser.ts"
+			],
+			[
+				"index",
+				"es/index-configuration.json"
+			],
+			[
+				"server",
+				"server.ts"
+			],
+			[
+				"contorll",
+				"main/controller/controller.ts"
+			],
+			[
+				"routes.",
+				"main/http/routes.ts"
+			],
+			[
+				"linkpa",
+				"main/controller/parser/link-parser.ts"
+			],
+			[
+				"index-confi",
+				"es/index-configuration.json"
+			],
+			[
+				"con",
+				"main/controller/controller.ts"
+			],
+			[
+				"controller",
+				"main/controller/controller.ts"
+			],
+			[
+				"parse.ts",
+				"main/controller/parser/parser.ts"
+			],
+			[
+				"route.ts",
+				"main/http/routes.ts"
+			],
+			[
+				"errors.ts",
+				"main/collection/errors.ts"
+			],
+			[
+				"sol-pasre",
+				"main/controller/parser/solution-parser.ts"
+			],
+			[
+				"solution-parser",
+				"main/controller/parser/solution-parser.js"
+			],
+			[
+				"link",
+				"main/link-parser.ts"
+			],
+			[
+				"es-fe",
+				"main/es-feeder.ts"
+			],
+			[
+				"",
+				"feeder.ts"
+			],
+			[
+				"model.t",
+				"main/collection/model.ts"
+			],
+			[
+				"solutions",
+				"main/collection/solutions.ts"
+			],
+			[
+				"error",
+				"main/collection/errors.ts"
+			],
+			[
+				"slution",
+				"solution-parser.ts"
+			],
+			[
+				".gitigo",
+				".gitignore"
+			],
+			[
+				"datacon",
+				"app/Http/Controllers/DataController.php"
+			],
+			[
+				"route.php",
+				"app/Http/routes.php"
+			],
+			[
+				"devicecon",
+				"app/Http/Controllers/DeviceController.php"
+			],
+			[
+				"style.css",
+				"platforms/ios/www/css/style.css"
+			],
+			[
+				"config",
+				"config.xml"
+			],
+			[
+				"cardsts",
+				"app/shared/collections/cards.ts"
+			],
+			[
+				"add-deck",
+				"app/client/pages/add-deck/add-deck.ts"
+			],
+			[
+				"cards.ts",
+				"app/shared/collections/cards.ts"
+			],
+			[
+				"view-de",
+				"app/client/pages/view-deck/view-deck.html"
+			],
+			[
+				"view-deck",
+				"app/client/pages/view-deck/view-deck.ts"
+			],
+			[
+				"deck-list.ts",
+				"app/client/pages/deck-list/deck-list.ts"
+			],
+			[
+				"deck-lis",
+				"app/client/pages/deck-list/deck-list.ts"
+			],
+			[
+				"deck-list",
+				"app/client/pages/deck-list/deck-list.html"
+			],
+			[
+				"task.ts",
+				"app/node_modules/angular2-meteor/examples/todos-meteor-1.3/imports/components/task.ts"
+			],
+			[
+				"typescrip",
+				"app/node_modules/reflect-metadata/spec/typescript.html"
+			],
+			[
+				"team-list.html",
+				"app/client/pages/team-list/team-list.html"
+			],
+			[
+				"team-list",
+				"app/client/pages/team-list/team-list.ts"
+			],
+			[
+				"task",
+				"app/client/components/task-table/task-table.html"
+			],
+			[
+				".evn",
+				".env"
+			],
+			[
+				"branchcon",
+				"app/Http/Controllers/BranchController.php"
+			],
+			[
+				"web.php",
+				"routes/web.php"
+			],
+			[
+				"registerfor",
+				"app/Http/Controllers/RegisterForProductController.php"
+			],
+			[
+				"regsiter",
+				"app/Http/Middleware/RegisterIfApplicable.php"
+			],
+			[
+				"create_table",
+				"database/migrations/2016_11_03_182302_create_registrar_table.php"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"index.php",
+				"public/index.php"
+			],
+			[
+				"registerif",
+				"app/Http/Middleware/RegisterIfApplicable.php"
+			],
+			[
+				"temc",
+				"app/Http/Controllers/TemplateController.php"
+			],
+			[
+				"app.var",
+				"theme/app.variables.scss"
+			],
+			[
+				"publish",
+				"app/server/publish.ts"
+			],
+			[
+				"task-list",
+				"app/client/pages/task-list/task-list.ts"
+			],
+			[
+				"tasks",
+				"app/shared/collections/tasks.ts"
+			],
+			[
+				"task-list.ts",
+				"app/client/pages/task-list/task-list.ts"
+			],
+			[
+				"tsconfig",
+				"app/tsconfig.json"
+			],
+			[
+				"ts.config",
+				"app/node_modules/angular2-meteor/examples/todos-meteor-1.3/tsconfig.json"
+			],
+			[
+				"tasks.ts",
+				"app/shared/collections/tasks.ts"
+			],
+			[
+				"task-table",
+				"app/client/components/task-table/task-table.ts"
+			],
+			[
+				"home",
+				"app/client/pages/home/home.ts"
+			],
+			[
+				"team-detail",
+				"app/client/pages/team-detail/team-detail.html"
+			],
+			[
+				"app.core",
+				"theme/app.core.scss"
+			],
+			[
+				"style",
+				"www/css/style.css"
+			],
+			[
+				"teamme",
+				"app/shared/collections/team-members.ts"
+			],
+			[
+				"teams",
+				"app/shared/collections/teams.ts"
+			],
+			[
+				"team.",
+				"app/shared/collections/teams.ts"
+			],
+			[
+				"team-form",
+				"app/client/pages/team-form/team-form.html"
+			],
+			[
+				"team-memb",
+				"app/shared/collections/team-members.ts"
+			],
+			[
+				"team.ts",
+				"app/shared/collections/teams.ts"
+			],
+			[
+				"teammember",
+				"app/shared/collections/team-members.ts"
+			],
+			[
+				"team-detai.ts",
+				"app/client/pages/team-detail/team-detail.ts"
+			],
+			[
+				"team-dateil",
+				"app/client/pages/team-detail/team-detail.html"
+			],
+			[
+				"app.core.scss",
+				"theme/app.core.scss"
+			],
+			[
+				"team-list.ts",
+				"app/client/pages/team-list/team-list.ts"
+			],
+			[
+				"team-form.html",
+				"app/client/pages/team-form/team-form.html"
+			],
+			[
+				"index.html",
+				"app/client/index.html"
+			],
+			[
+				"team-member",
+				"app/shared/collections/team-members.ts"
+			],
+			[
+				"teams.ts",
+				"app/shared/collections/teams.ts"
+			],
+			[
+				"team-list.",
+				"app/client/pages/team-list/team-list.ts"
+			],
+			[
+				"app.va",
+				"theme/app.variables.scss"
+			],
+			[
+				"ios-bun",
+				"app/public/stylesheets/ios-bundle.css"
+			],
+			[
+				"app.scss",
+				"theme/app.core.scss"
+			],
+			[
+				"team-",
+				"theme/pages/team-list/team-list.scss"
+			],
+			[
+				"index.htl",
+				"client/index.html"
+			],
+			[
+				"metadata",
+				"node_modules/@angular/core/src/metadata.js"
+			],
+			[
+				"team-form.ts",
+				"client/pages/team-form/team-form.ts"
+			],
+			[
+				"team-table",
+				"client/components/team-table/team-table.html"
+			],
+			[
+				"team.d.ts",
+				"typings/team.d.ts"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "th",
+		"selected_items":
+		[
+			[
+				"th",
+				"~/Downloads/5276813-00ef37c77b4e12389546481f7cbe20c85d458a37/thesis-html-parser.sublime-workspace"
+			],
+			[
+				"",
+				"~/Projects/Personal/Do/do.sublime-project"
+			],
+			[
+				"do",
+				"~/Projects/Personal/Do/do.sublime-project"
+			],
+			[
+				"mcm",
+				"/Users/Akeereena/Projects/#Sublime Projects/mcm.sublime-workspace"
+			],
+			[
+				"nay",
+				"~/Projects/#Sublime Projects/any.team.nativescript.sublime-project"
+			],
+			[
+				"nav",
+				"~/Projects/#Sublime Projects/NativeScript-sample.sublime-project"
+			],
+			[
+				"mcmc",
+				"~/Projects/#Sublime Projects/mcm.sublime-project"
+			],
+			[
+				"invp",
+				"~/Projects/#Sublime Projects/invpcm.sublime-project"
+			],
+			[
+				"bkk",
+				"~/Projects/#Sublime Projects/bkk-hospital.sublime-project"
+			],
+			[
+				"MCM",
+				"~/Projects/#Sublime Projects/MCM.sublime-project"
+			],
+			[
+				"mys",
+				"~/Projects/#Sublime Projects/Mysteltainn.sublime-project"
+			],
+			[
+				"My",
+				"~/Projects/#Sublime Projects/Mysteltainn.sublime-project"
+			],
+			[
+				"shout",
+				"~/Projects/#Sublime Projects/Shoutout.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 375.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 378.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 241.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
