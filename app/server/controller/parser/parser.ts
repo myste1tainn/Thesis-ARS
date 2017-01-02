@@ -5,7 +5,6 @@ import { SolutionParser } from './solution-parser'
 import { Solutions, Solution } from '../../collection/solutions'
 import { Errors, Error } from '../../collection/errors'
 import { HTTP } from '../../http/http'
-import { Request } from '../../http/routes'
 import { ESFeeder } from '../feeder/es-feeder'
 
 let term = require('terminal-kit').terminal

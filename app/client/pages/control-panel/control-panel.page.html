@@ -1,0 +1,63 @@
+<style type="text/css">
+    ion-card.half {
+        width: 48.5%; 
+        height: 200px; 
+        float: left;
+    }
+</style>
+
+<ion-header>
+    <ion-navbar primary>
+        <button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            {{"home.title" | translate}}
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-card (click)="parseAndFeed()">
+        <ion-list-header>Parse & Feed</ion-list-header>
+        <ion-card-content>
+            Do parse html documents from manual.readyplanet.com,
+            Save data to mongodb and then feed to ElasticSearch
+        </ion-card-content>
+    </ion-card>
+    <ion-card (click)="pushVectorView()">
+        <ion-list-header>Vector create</ion-list-header>
+        <ion-card-content>
+            Create vector (array of vectors) of terms from the indexes
+            within ElasticSearch
+        </ion-card-content>
+    </ion-card>
+
+    <!-- Train pair -->
+    <ion-card class="half" (click)="svmTrain()">
+        <ion-list-header>SVM Train</ion-list-header>
+        <ion-card-content>
+            Train Support Vector Machine
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="half">
+        <ion-list-header>Train results</ion-list-header>
+        <ion-card-content>
+            
+        </ion-card-content>
+    </ion-card>
+
+    <!-- Test Pair -->
+    <ion-card class="half" (click)="svmPredict()">
+        <ion-list-header>SVM Predict</ion-list-header>
+        <ion-card-content>
+            Predict with some data
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="half">
+        <ion-list-header>Predict results</ion-list-header>
+        <ion-card-content>
+            
+        </ion-card-content>
+    </ion-card>
+</ion-content>

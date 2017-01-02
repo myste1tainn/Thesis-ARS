@@ -12,6 +12,9 @@ import { ParserController } from './controller/parser/parser'
 import { TermVectorListController } from './controller/term-vector-list/term-vector-list'
 import { VectorCollection, Vector } from '../lib/collections/vector'
 
+let sync = require('sync')
+console.log(sync)
+
 declare class Restivus {
     constructor (options?: any);
     public addCollection<T>(collection: Mongo.Collection<T>);
@@ -43,6 +46,18 @@ if (Meteor.isServer) {
 			}
 			
 			return { success: true }
+		}
+	})
+
+	API.addRoute('svm/train', { authRequired: false }, {
+		get: () => {
+			this.response.end('done') 
+		}
+	})
+
+	API.addRoute('svm/predict', { authRequired: false }, {
+		get: () => {
+			this.response.end('done')
 		}
 	})
 }

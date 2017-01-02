@@ -10,8 +10,8 @@ import {Constants} from "../lib/Constants";
 
 /*********/
 /* Pages */
-import {HomePage} from './pages/home/home'
-import {ControlPanelPage} from './pages/control-panel/control-panel'
+import {HomePage} from './pages/home/home.page'
+import {ControlPanelPage} from './pages/control-panel/control-panel.page'
 
 // export const routes: Routes = [
 //   { path: 'cat', component: HomePage },
