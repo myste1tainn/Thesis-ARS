@@ -1,0 +1,63 @@
+<style type="text/css">
+    div.half {
+        width: 48.5%; 
+        height: 200px; 
+        float: left;
+    }
+</style>
+
+<div>
+    <div primary>
+        <button menuToggle>
+            <div name="menu"></div>
+        </button>
+        <div>
+            {{"home.title"}}
+        </div>
+    </div>
+</div>
+
+<div>
+    <div (click)="parseAndFeed()">
+        <div>Parse & Feed</div>
+        <div>
+            Do parse html documents from manual.readyplanet.com,
+            Save data to mongodb and then feed to ElasticSearch
+        </div>
+    </div>
+    <div (click)="pushVectorView()">
+        <div>Vector create</div>
+        <div>
+            Create vector (array of vectors) of terms from the indexes
+            within ElasticSearch
+        </div>
+    </div>
+
+    <!-- Train pair -->
+    <div class="half" (click)="svmTrain()">
+        <div>SVM Train</div>
+        <div>
+            Train Support Vector Machine
+        </div>
+    </div>
+    <div class="half">
+        <div>Train results</div>
+        <div>
+            
+        </div>
+    </div>
+
+    <!-- Test Pair -->
+    <div class="half" (click)="svmPredict()">
+        <div>SVM Predict</div>
+        <div>
+            Predict with some data
+        </div>
+    </div>
+    <div class="half">
+        <div>Predict results</div>
+        <div>
+            
+        </div>
+    </div>
+</div>
