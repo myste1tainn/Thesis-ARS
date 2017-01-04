@@ -1,9 +1,0 @@
-{
-  "public": {
-    "appName": "Meteor-Ionic2-Starter"
-  },
-
-  "env": {
-  	"MONGO_URL": "mongodb://127.0.0.1:27071/"
-  }
-}

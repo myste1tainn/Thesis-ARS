@@ -1,0 +1,17 @@
+<div class="modal" [ngClass]="{'show': loading}">
+	<spinner style="margin: auto" [size]="100" [tickness]="5" ></spinner>
+</div>
+<div>
+	<div>
+		<div>{{ title }}</div>
+        <div>
+            {{ message }}
+        </div>
+	</div>
+	<div>
+		<div>Term Vectors</div>
+		<div style="overflow: scroll">
+			<term-vectors-matrix></term-vectors-matrix>
+		</div>
+	</div>
+</div>
