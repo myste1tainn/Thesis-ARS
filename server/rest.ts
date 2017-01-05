@@ -2,14 +2,40 @@ import { ParserController } from './controller/parser/parser'
 import { ESFeeder } from './controller/feeder/es-feeder'
 import { SupportVectorMachine } from './controller/svm/svm.controller'
 import { TermVectorListController } from './controller/term-vector-list/term-vector-list'
-import { VectorCollection, TermCollection } from '../shared/collection/collection'
+import { TrainedModelCollection, VectorCollection, TermCollection } from '../shared/collection/collection'
 import { Express, Request, Response } from 'express'
 import { EXPRESS_SERVER } from './server'
 
 let ExpressRest = require('express-rest')
 
-let svm = new SupportVectorMachine()
-svm.train()
+TrainedModelCollection.find({}).then((models) => {
+	let svm = new SupportVectorMachine()
+
+	var mockTrainDataSet = [
+		    [[0, 1, 0, 3, 0, 4, 0, 6, 0, 6], 1],
+		    [[0, 1, 3, 3, 0, 4, 6, 6, 0, 6], 2],
+		    [[1, 0, 0, 0, 0, 0, 0, 0, 0, 0], 3],
+		    [[1, 1, 0, 0, 0, 0, 0, 0, 0, 0], 4],
+		];
+
+	var mockTestDataSet = [
+		    [0, 1, 0, 3, 0, 4, 0, 6, 0, 6],
+		    [0, 1, 3, 3, 0, 4, 6, 6, 0, 6],
+		    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+		    [1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+		];
+
+	if (models.length > 0) {
+		svm.restore(models[0])
+		svm.predict(mockTrainDataSet)
+	} else {
+
+		svm.train(mockTrainDataSet)
+		.done(() => {
+			svm.predict(mockTestDataSet)
+		})
+	}
+})
 
 export class ApplicationRestful {
 	static setup(server: Express) {

@@ -1,4 +1,4 @@
-import { Collection, Model } from './model'
+import { Collection, Model } from '../../shared/collection/model'
 
 // Database Collections
 export let Errors = new Collection<Error>('errors')

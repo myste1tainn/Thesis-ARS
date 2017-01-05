@@ -25,7 +25,8 @@ export class DB {
 			d.resolve(this.db)
 			return d.promise
 		}
-		this.client.connect(this.uri, (err, db: Db) => {
+
+		this.client.connect(this.uri, (err: any, db: Db) => {
 			this.db = db
 			d.resolve(db)
 		})
@@ -36,5 +37,3 @@ export class DB {
 	}
 
 }
-
-DB.default()

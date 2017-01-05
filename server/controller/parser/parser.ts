@@ -2,10 +2,12 @@ import * as Q from 'q'
 import { Controller } from '../controller'
 import { LinkParser } from './link-parser'
 import { SolutionParser } from './solution-parser'
-import { Solutions, Solution } from '../../collection/solutions'
+import { Solution } from '../../../shared/collection/solution'
+import { SolutionCollection } from '../../../shared/collection/collection'
 import { Errors, Error } from '../../collection/errors'
 import { HTTP } from '../../http/http'
 import { ESFeeder } from '../feeder/es-feeder'
+import {Request, Response} from 'express'
 
 let term = require('terminal-kit').terminal
 let linkParser = new LinkParser()
@@ -29,7 +31,7 @@ export class ParserController extends Controller {
 	solutions: Solution[]
 	defer: Q.Deferred<any>
 
-	constructor(req, res) {
+	constructor(req: Request, res: Response) {
 		super(req, res)
 		this.processedURL = []
 		this.solutions = []
@@ -95,7 +97,7 @@ export class ParserController extends Controller {
 	}
 
 	doParseHandler(url: string, superUrl?: string, parseSideBar: boolean = false) {
-		return (html) => {
+		return (html: any) => {
 			linkParser.parseSideBar = parseSideBar
 			let links = this.parseLinks(html, url)
 			this.parseSolution(html, url, superUrl, links)
@@ -129,7 +131,7 @@ export class ParserController extends Controller {
 	saveToDb(solution: Solution) {
 		clearTimeout(END_PARSING)
 
-		Solutions.upsert({ _id: solution._id }, solution)
+		SolutionCollection.upsert({ _id: solution._id }, solution)
 		var string = ""
 		string += 'log: solution parsed and save, total ' + __solutionCount + ', processed URL ' + this.processedURL.length
 		string += `\nname: ${solution.name}`
