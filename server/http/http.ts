@@ -1,7 +1,6 @@
 import * as Q from 'q'
 import * as http from 'http'
 import * as Convert from 'iconv-lite'
-import * as Meteor from 'meteor/meteor'
 import { Errors, Error } from '../collection/errors'
 
 // http.globalAgent.maxSockets = 100

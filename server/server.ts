@@ -1,15 +1,12 @@
 import 'reflect-metadata'
-import { TermVectorListController } from './controller/term-vector-list/term-vector-list'
-import { Vector } from '../shared/collection/vector'
-import { VectorCollection, TermCollection } from '../shared/collection/collection'
 import { Request, Response } from 'express'
 import { ApplicationRouter } from './routes'
 import { ApplicationRestful } from './rest'
+import { DB } from './collection/db'
 import * as Express from 'express'
 
-console.log('log: bootstrapping express server...')
-
 export let EXPRESS_SERVER = Express()
+console.log('log: bootstrapping express server...')
 
 EXPRESS_SERVER.use('/client', Express.static('client'))
 EXPRESS_SERVER.use('/node_modules', Express.static('node_modules'))

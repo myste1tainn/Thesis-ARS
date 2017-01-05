@@ -1,9 +1,9 @@
-import * as e from 'express'
+import {Request, Response} from 'express'
 
 export class Controller {
-	request: e.Request
-	response: e.Response
-	constructor(req: e.Request, res: e.Response) {
+	request: Request
+	response: Response
+	constructor(req: Request, res: Response) {
 		this.request = req
 		this.response = res
 	}

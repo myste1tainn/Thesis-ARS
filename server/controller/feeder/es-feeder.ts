@@ -1,18 +1,21 @@
 import * as Q from 'q'
 import { HTTP } from '../../http/http'
 import { Controller } from '../controller'
-import { Solutions, Solution } from '../../collection/solutions'
+import { Solution } from '../../../shared/collection/solution'
+import {Request, Response} from 'express'
 
-let __createdCount = 0
-const INDEX_SETTINGS = require('./index-configuration.json')
+let Path = require('path')
+let settingsPath = Path.resolve('server/controller/feeder/index-configuration.json')
+const INDEX_SETTINGS = require(settingsPath)
 // const INDEX_SETTINGS = require('../es/index-configuration-default-stop.json')
 
+let CREATED_COUNT = 0
 export class ESFeeder extends Controller {
 	url(path: string = ''): string {
 		return 'localhost:9200/thesis/' + path
 	}
 
-	constructor(req, res) {
+	constructor(req: Request, res: Response) {
 		super(req, res)
 	}
 
@@ -21,10 +24,10 @@ export class ESFeeder extends Controller {
 		this.createIndex()
 
 		let defer = Q.defer()
-		Solutions.find({}).then((sols) => {
-			this.addData(sols)
-			defer.resolve()
-		})
+		// Solutions.find({}).then((sols) => {
+		// 	this.addData(sols)
+		// 	defer.resolve()
+		// })
 		return defer.promise
 	}
 
@@ -51,8 +54,8 @@ export class ESFeeder extends Controller {
 			let path = 'solution/'+sol._id
 			delete sol._id
 			HTTP.put(this.url(path), JSON.stringify(sol)).then((res) => {
-				process.stdout.write(`log: es solutions created successfully (${__createdCount})\r`)
-				__createdCount++
+				process.stdout.write(`log: es solutions created successfully (${CREATED_COUNT})\r`)
+				CREATED_COUNT++
 			}).catch((err) => {
 				console.log('log: es solutions creation failed', err)
 			})

@@ -3,7 +3,7 @@
 	[
 		{
 			"path": ".",
-			"folder_exclude_patterns": ["app/node_modules*", "app/*.meteor*"]
+			"folder_exclude_patterns": ["node_modules*", "executable*"]
 		}
 	],
 }

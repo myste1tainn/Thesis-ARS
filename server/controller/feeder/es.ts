@@ -45,7 +45,7 @@ export class ES {
 	}
 
 	static createIDs(indexes: any) {
-		var ids = []
+		var ids: string[] = []
 		for (var i = indexes.hits.hits.length - 1; i >= 0; i--) {
 			let item = indexes.hits.hits[i]
 			ids.push(item._id)

@@ -1,16 +1,17 @@
 import * as Q from 'q'
-import {Meteor} from 'meteor/meteor';
 import { Controller } from '../controller'
 import { ES } from '../feeder/es'
-import { VectorCollection, Vector } from '../../../lib/collections/vector'
-import { TermCollection, Term } from '../../../lib/collections/term'
+import { Vector } from '../../../shared/collection/vector'
+import { Term } from '../../../shared/collection/term'
+import { VectorCollection, TermCollection } from '../../../shared/collection/collection'
+import {Request, Response} from 'express'
 import 'zone.js'
 import 'reflect-metadata'
 
 export class TermVectorListController extends Controller {
 	static self: TermVectorListController
 
-	constructor(req, res) {
+	constructor(req: Request, res: Response) {
 		super(req, res)
 		TermVectorListController.self = this
 	}
@@ -23,13 +24,14 @@ export class TermVectorListController extends Controller {
 
 	vector() {	
 		var q = Q.defer()
-		ES.getAllTermVectors().then(Meteor.bindEnvironment((termVectorsInfo) => {
+		ES.getAllTermVectors().then((termVectorsInfo) => {
 			this.createVectors(termVectorsInfo)
-		}))
+			q.resolve()
+		})
 		return q.promise
 	}
 
-	createVectors(termVectorsInfo) {
+	createVectors(termVectorsInfo: any) {
 		for (var i = termVectorsInfo.docs.length - 1; i >= 0; i--) {
 			let doc = termVectorsInfo.docs[i]
 			var id = <string>doc._id

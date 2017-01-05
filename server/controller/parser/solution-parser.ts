@@ -1,7 +1,7 @@
 import * as Q from 'q'
 import * as Cheerio from 'cheerio'
 import * as Crypto from 'crypto'
-import { Solutions, Solution } from '../../collection/solutions'
+import { Solution } from '../../../shared/collection/solution'
 import { Errors, Error } from '../../collection/errors'
 
 var _this: SolutionParser = null
