@@ -105,4 +105,14 @@ export class Collection<T extends Indexable> {
 		})
 		return d.promise
 	}
+
+	count() {
+		let d = Q.defer<number>()
+		this._con().then(() => {
+			this.collection.count({}).then((count) => {
+				d.resolve(count)
+			})
+		})
+		return d.promise
+	}
 }

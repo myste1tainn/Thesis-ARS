@@ -2,8 +2,25 @@ import * as Q from 'q'
 import { HTTP } from '../../http/http'
 
 export class ES {
+
 	static url(path: string = ''): string {
 		return 'localhost:9200/thesis/' + path
+	}
+
+	static search(query: string) {
+		let d = Q.defer<any>()
+		let url = this.url('solution/_search?size=100')
+		HTTP.get(url).then((res) => {
+			d.resolve(res)
+		})
+		return d.promise
+	}
+	static count(query: string) {
+		let d = Q.defer<any>()
+		this.search(query).then((res) => {
+			d.resolve(res.hits.total)
+		})
+		return d.promise
 	}
 
 	static getAllIndexes(replyAsObject: boolean = true): Q.Promise<any> {
@@ -28,7 +45,7 @@ export class ES {
 			let params = {
 				ids: this.createIDs(indexes),
 			  	parameters: {
-			    	// term_statistics: true
+			    	term_statistics: true
 			  	}
 			}
 			console.log('log: getting all term vectors')

@@ -3,6 +3,7 @@ import { Request, Response } from 'express'
 import { ApplicationRouter } from './routes'
 import { ApplicationRestful } from './rest'
 import { DB } from './collection/db'
+import { SVMServerRun } from './svm.server'
 import * as Express from 'express'
 
 export let EXPRESS_SERVER = Express()
@@ -15,8 +16,11 @@ EXPRESS_SERVER.use('/style', Express.static('style'))
 EXPRESS_SERVER.use('/executable/client', Express.static('executable/client'))
 EXPRESS_SERVER.use('/executable/shared', Express.static('executable/shared'))
 
-EXPRESS_SERVER.listen(3000)
-console.log('log: express server is now listening on port 3000')
+let port = 3000
+EXPRESS_SERVER.listen(port)
+console.log(`log: APPLICATION server is now listening on port ${port}`)
 
 ApplicationRouter.setup(EXPRESS_SERVER)
 ApplicationRestful.setup(EXPRESS_SERVER)
+
+SVMServerRun()

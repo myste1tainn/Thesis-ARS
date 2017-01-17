@@ -24,43 +24,75 @@ export class TermVectorListController extends Controller {
 
 	vector() {	
 		var q = Q.defer()
-		ES.getAllTermVectors().then((termVectorsInfo) => {
-			this.createVectors(termVectorsInfo)
-			q.resolve()
-		})
+		VectorCollection.find({}).then((vectors) => {
+			if (vectors.length > 0) {
+				q.resolve(vectors)
+			} else {
+				ES.getAllTermVectors().then((esResult) => {
+					vectors = this.createVectors(esResult)
+					q.resolve(vectors)
+				})	
+			}
+		})	
 		return q.promise
 	}
 
-	createVectors(termVectorsInfo: any) {
-		for (var i = termVectorsInfo.docs.length - 1; i >= 0; i--) {
-			let doc = termVectorsInfo.docs[i]
-			var id = <string>doc._id
-			id = id.replace(/\./g, '_')
-			let termVectors = doc.term_vectors
+	createVectors(esResult: any): Vector[] {
+		var vectors: Vector[] = []
+		for (var i = esResult.docs.length - 1; i >= 0; i--) {
+			let doc = esResult.docs[i]
+			let id = <string>doc._id
 			var vectorObj = {}
-			for (let termVectorKey in termVectors) {
-				let terms = termVectors[termVectorKey].terms
-				for (let termKey in terms) {
-					var newTermKey = termKey
-					if (termKey.indexOf('.') > -1) {
-						newTermKey = termKey.replace(/\./g, '_')
-					}
-					let freq = terms[termKey].term_freq
-
-					if (!vectorObj) {
-						vectorObj = {}
-					}
-					if (!vectorObj[newTermKey]) {
-						vectorObj[newTermKey] = 0
-					}
-					vectorObj[newTermKey] += freq
-					TermCollection.upsert({ _id: termKey }, { _id: termKey, name: termKey })
-				}
+			let terms = doc.term_vectors.steps.terms
+			let termsCount = this.termsCountFor(terms)
+			for (let key in terms) {
+				let term = terms[key]
+				let score = this.createTermIfNeeded(key, term, vectorObj, termsCount, id)
+				vectorObj[key] = score
 			}
-			let vector = new Vector()
+			vectors.push(this.createVector(id, vectorObj))
+		}
+		return vectors
+	}
+
+	termsCountFor(terms: any[]): number {
+		var count = 0
+		for (let key in terms) {
+			let term = terms[key]
+			count += term.term_freq
+		}
+		return count
+	}
+
+	createTermIfNeeded(key: any, term: any, vectorObj: any, termsCount: number, id: any): any {
+		key = key.replace(/\./g, '_')
+		let DOC_COUNT = 638
+		let termObject = { 
+			_id: key, 
+			name: key,
+		}
+		termObject[id] = {
+			termCount: term.term_freq,
+			docTermsCount: termsCount,
+			docCount: term.doc_freq,
+			totalDocCount: DOC_COUNT,
+			tf: 0,
+			idf: 0,
+			tfidf: 0
+		}
+		termObject[id].tf = termObject[id].termCount / termObject[id].docTermsCount
+		termObject[id].idf = Math.log(DOC_COUNT / termObject[id].docCount)
+		termObject[id].tfidf = termObject[id].tf * termObject[id].idf
+		TermCollection.upsert({ _id: key }, termObject)
+		return termObject[id].tfidf
+	}
+
+	createVector(id: string, vectorObj: any) {
+		let vector = new Vector()
 			vector._id = id
 			vector.values = vectorObj
 			VectorCollection.upsert({ _id: id }, vector)
-		}
+
+		return vector
 	}
 }
