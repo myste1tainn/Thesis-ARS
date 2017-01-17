@@ -2,7 +2,7 @@ import { ParserController } from './controller/parser/parser'
 import { ESFeeder } from './controller/feeder/es-feeder'
 import { SupportVectorMachine } from './controller/svm/svm.controller'
 import { TermVectorListController } from './controller/term-vector-list/term-vector-list'
-import { TrainData, TrainedModelCollection, TermCollection } from '../shared/collection/collection'
+import { TrainData, TrainedModelCollection, TermCollection, SolutionCollection } from '../shared/collection/collection'
 import { Express, Request, Response } from 'express'
 import { EXPRESS_SERVER } from './server'
 
@@ -28,6 +28,24 @@ export class ApplicationRestful {
 			let parser = new ParserController(null, null)
 			parser.parse().then(() => {
 				
+			})
+		})
+
+		rest.get('/api/assign-group-id', (request: any, rest: any) => {
+			var urlAndGroupID: any = {}
+			SolutionCollection.find({}).then((sols) => {
+				for (var i = sols.length - 1; i >= 0; i--) {
+					let sol = sols[i]
+					var groupID = urlAndGroupID[sol.superUrl]
+					if (typeof groupID == 'undefined') {
+						groupID = Object.keys(urlAndGroupID).length
+						urlAndGroupID[sol.superUrl] = groupID
+					}
+					sol.groupID = groupID
+					SolutionCollection.update({_id: sol._id}, sol)
+				}
+
+				rest.ok('done')
 			})
 		})
 
