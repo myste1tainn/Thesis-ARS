@@ -146,7 +146,7 @@ let G_API_CREDENTIALS = {
         "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
         "client_secret": "-sgMWuS8kIizrT-DlJI8MlAH",
         "redirect_uris": [
-            "http://localhost:3000/oauthcallback"
+            "/oauthcallback"
         ],
         "javascript_origins": [
             "http://localhost:8080",
