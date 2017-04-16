@@ -1,3 +1,4 @@
+import * as Q from 'q'
 
 export class Error {
 	static handle(code:number, d:Q.Deferred<any>) {

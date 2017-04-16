@@ -117,7 +117,7 @@ export class ApplicationRestful {
 			let messages = request.body
 			for (var i = messages.length - 1; i >= 0; i--) {
 				let id = messages[i].id
-				MessageCollection.insert({ _id: id })
+				MessageCollection.insert({ _id: id, isReplied: true })
 			}
 			rest.ok()
 		})
