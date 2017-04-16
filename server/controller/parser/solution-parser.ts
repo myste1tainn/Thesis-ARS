@@ -27,7 +27,7 @@ export class SolutionParser {
 			if (!!sol) {
 				_this.deferred.resolve(sol)	
 			} else {
-				_this.deferred.reject(`Solution cannot be parsed from html\n\n${html}`)
+				_this.deferred.reject(`Solution cannot be parsed from html\n\n${html.trim()}`)
 			}
 		}, 0)
 

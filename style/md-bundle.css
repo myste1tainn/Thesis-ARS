@@ -27,9 +27,3 @@ ion-label[floating] {
 
 table {
   font-size: 8px !important; }
-
-table td, table th {
-  border: 0.5px solid gray !important;
-  padding: 4px;
-  width: 50px; }
-

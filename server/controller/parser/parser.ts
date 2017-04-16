@@ -9,7 +9,7 @@ import { HTTP } from '../../http/http'
 import { ESFeeder } from '../feeder/es-feeder'
 import {Request, Response} from 'express'
 
-let term = require('terminal-kit').terminal
+let terminal = require('terminal-kit').terminal
 let linkParser = new LinkParser()
 let solutionParser = new SolutionParser()
 var __solutionCount = 0
@@ -24,33 +24,51 @@ function __produce(num: number = 1) {
 	// console.log('log: pool ADDED, ', __consumptionPool, ' (' + num + ')')
 }
 
+let TARGET_URL = 'manual-velaclassic-th.readyplanet.com'
 var END_PARSING: any;
 
+export class ParserControllerResponse {
+	dProgress: Q.Deferred<any>
+	dEnd: Q.Deferred<void>
+	progress: Q.Promise<any>
+	end: Q.Promise<void>
+	constructor() {
+		this.dProgress = Q.defer()
+		this.dEnd = Q.defer<void>()
+		this.progress = this.dProgress.promise
+		this.end = this.dEnd.promise
+	}
+}
+
 export class ParserController extends Controller {
-	processedURL: string[]
+	processedURLs: string[]
 	solutions: Solution[]
-	defer: Q.Deferred<any>
+	defers = new ParserControllerResponse()
 
 	constructor(req: Request, res: Response) {
 		super(req, res)
-		this.processedURL = []
+		this.processedURLs = []
 		this.solutions = []
 	}
 
 	parse() {
-		let endDefer = Q.defer()
-		this.defer = Q.defer()
-		this.start('manual-velaclassic-th.readyplanet.com', null, true)
-		this.defer.promise.then(() => {
-			term.moveTo(1, 1)
-			term.eraseDisplayBelow()
-			term('STARTING ElasticSearch Feeder...')
+		this.start(TARGET_URL, null, true)
+		return this.defers
+	}
+
+	parseAndFeed() {
+		this.defers.dProgress = Q.defer()
+		this.start(TARGET_URL, null, true)
+		this.defers.dProgress.promise.then(() => {
+			terminal.moveTo(1, 1)
+			terminal.eraseDisplayBelow()
+			terminal('STARTING ElasticSearch Feeder...')
 			let feeder = new ESFeeder(this.request, this.response)
 			feeder.start().then(() => {
-				endDefer.resolve()
+				this.defers.dEnd.resolve()
 			})
 		})
-		return endDefer.promise
+		return this.defers
 	}
 
 	catchError(errorMessage: string) {
@@ -58,14 +76,15 @@ export class ParserController extends Controller {
 		let error = new Error()
 		error.message = errorMessage
 		Errors.insert(error)
+		this.defers.dProgress.notify(null)
 	}
 
 	start(url: string, superUrl?: string, parseSideBar: boolean = false) {
 		__consume()
-		if (this.processedURL.indexOf(url) > -1) {
+		if (this.processedURLs.indexOf(url) > -1) {
 			return
 		}
-		this.processedURL.push(url)
+		this.processedURLs.push(url)
 		let parse = this.doParseHandler(url, superUrl, parseSideBar)
 		HTTP.get(url, { encoding: 'tis-620' })
 		.then(parse)
@@ -80,6 +99,7 @@ export class ParserController extends Controller {
 				string = `other error occurred ${error}`
 			}
 			console.log('log: ' + string)
+			console.log('log: ', error)
 			this.catchError(string)
 		})
 	}
@@ -99,12 +119,12 @@ export class ParserController extends Controller {
 	doParseHandler(url: string, superUrl?: string, parseSideBar: boolean = false) {
 		return (html: any) => {
 			linkParser.parseSideBar = parseSideBar
-			let links = this.parseLinks(html, url)
+			let links = this.linksFromHtml(html, url)
 			this.parseSolution(html, url, superUrl, links)
 		}
 	}
 
-	parseLinks(html: string, ownerUrl?: string) {
+	linksFromHtml(html: string, ownerUrl?: string) {
 		let links = linkParser.parse(html)
 		__produce(links.length)
 		for (var i = links.length - 1; i >= 0; i--) {
@@ -133,16 +153,17 @@ export class ParserController extends Controller {
 
 		SolutionCollection.upsert({ _id: solution._id }, solution)
 		var string = ""
-		string += 'log: solution parsed and save, total ' + __solutionCount + ', processed URL ' + this.processedURL.length
+		string += 'log: solution parsed and save, total ' + __solutionCount + ', processed URL ' + this.processedURLs.length
 		string += `\nname: ${solution.name}`
 		string += `\nurl: ${solution.url}`
 		string += `\nstepsCount: ${solution.steps.length}`
-		term.moveTo(1, 1)
-		term.eraseDisplayBelow()
-		term(string)
+		terminal.moveTo(1, 1)
+		terminal.eraseDisplayBelow()
+		terminal(string)
+		this.defers.dProgress.notify(null)
 
 		END_PARSING = setTimeout(() => {
-			this.defer.resolve()
+			this.defers.dProgress.resolve()
 		}, 60000)
 	}
 }

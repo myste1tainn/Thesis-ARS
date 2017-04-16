@@ -27,11 +27,8 @@ export class SupportVectorMachine {
 	train(dataset: TrainDataset[]) {
 		console.log('log: cleaning-up TRAINING DATA')
 		let trainingData: any[] = []
-		var a = 10
 		for (var i = 0; i < dataset.length; i++) {
 			trainingData[i] = dataset[i].data
-			trainingData[i][1] = i + a
-			a--; if (a == 0) a = 10
 		}
 		console.log('log: TRAINING classifier')
 		fs.writeFileSync('/Users/Myste1tainn/Desktop/training-data.json', JSON.stringify(trainingData))

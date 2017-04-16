@@ -3,7 +3,7 @@ import { Controller } from '../controller'
 import { ES } from '../feeder/es'
 import { Vector } from '../../../shared/collection/vector'
 import { Term } from '../../../shared/collection/term'
-import { VectorCollection, TermCollection } from '../../../shared/collection/collection'
+import { VectorCollection, TermCollection, SolutionCollection } from '../../../shared/collection/collection'
 import {Request, Response} from 'express'
 import 'zone.js'
 import 'reflect-metadata'
@@ -91,7 +91,15 @@ export class TermVectorListController extends Controller {
 		let vector = new Vector()
 			vector._id = id
 			vector.values = vectorObj
-			VectorCollection.upsert({ _id: id }, vector)
+		
+		SolutionCollection.find({_id: id}).then((sols) => {
+			let sol = sols[0]
+			if (!!sol) {
+				vector.classID = sol.groupID
+				VectorCollection.upsert({ _id: id }, vector)
+				console.log('vector created with classID', vector.classID)
+			}
+		})
 
 		return vector
 	}

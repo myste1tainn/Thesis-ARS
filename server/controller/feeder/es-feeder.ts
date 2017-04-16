@@ -2,6 +2,7 @@ import * as Q from 'q'
 import { HTTP } from '../../http/http'
 import { Controller } from '../controller'
 import { Solution } from '../../../shared/collection/solution'
+import { SolutionCollection } from '../../../shared/collection/collection'
 import {Request, Response} from 'express'
 
 let Path = require('path')
@@ -24,10 +25,10 @@ export class ESFeeder extends Controller {
 		this.createIndex()
 
 		let defer = Q.defer()
-		// Solutions.find({}).then((sols) => {
-		// 	this.addData(sols)
-		// 	defer.resolve()
-		// })
+		SolutionCollection.find({}).then((sols) => {
+			this.addData(sols)
+			defer.resolve()
+		})
 		return defer.promise
 	}
 

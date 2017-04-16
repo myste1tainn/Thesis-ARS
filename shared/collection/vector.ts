@@ -5,4 +5,5 @@ import {Model} from './model'
 export class Vector {
 	_id?: any
 	values: any
+	classID: number
 }

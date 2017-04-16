@@ -1,0 +1,49 @@
+<div id="gmail">
+    <div class="row">
+        <div class="col-3">
+            <h1>Pre-processing</h1>
+            <h4>Train SVM</h4>
+            <small>train SVM with vectors matrix</small>
+        </div>
+        <div class="col-3" style="padding-top: 32px; font-size: 1.2em;">
+            <div class="anim col-12 hidden" [class.show]="isProcessing">
+                <i class="fa fa-cog fa-spin text-secondary"></i>
+                <small style="position: absolute; top: 3px; left: 50px;">{{ status }} {{ progress }}</small>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row pad-std">
+        <div class="col-12 pad-std">
+            <button class="bg-energized text-primary" (click)="authorizeAccess()">Authorize</button>
+            <span class="pad-std">
+                Using
+                <i class="fa fa-envelope"></i>: 
+                <span class="text-secondary">s5807021857075@email.kmutnb.ac.th</span>
+            </span>
+        </div>
+        <div class="col-12 pad-std">
+            <div *ngIf="!!authenURL">
+                <span>Authorization URL</span>
+                <a href="{{ authenURL }}">{{ authenURL }}</a>
+            </div>
+            <div *ngIf="!!userCode">
+                <span>User Code</span>
+                <h1>{{ userCode }}</h1>
+            </div>
+        </div>
+        <div class="col-12 pad-std">
+            <button class="bg-energized text-primary" (click)="trySendEmail()">Try Send Mail</button>
+        </div>
+        <div class="col-12 pad-std">
+            <button class="bg-energized text-primary" (click)="readMail()">Read Mail</button>
+            <button class="bg-energized text-primary" (click)="markAsRead(messages)">Mark as Read</button>
+            <h3>{{ usedAccessToken }}</h3>
+            <div>{{ error }}</div>
+            <small>{{ errorDetail }}</small>
+            <div *ngFor="let message of messages">
+                <div>{{ message.id }}</div>
+            </div>
+        </div>
+    </div>
+</div>

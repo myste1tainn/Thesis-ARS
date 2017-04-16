@@ -48,6 +48,18 @@ export class Collection<T extends Indexable> {
 		return d.promise
 	}
 
+	findOne(query: Object, fields?: Object, skip?: number, limit?: number, timeout?: number): Q.Promise<T> {
+		let d = Q.defer<T>()
+		this.find(query, fields, skip, limit, timeout).then((infos) => {
+			if (infos.length > 0) {
+				d.resolve(infos[0])
+			} else {
+				d.reject('404 not found')
+			}
+		})
+		return d.promise
+	}
+
 	insert(object: T, options?: Mongo.CollectionInsertOneOptions): Q.Promise<T> {
 		let d = Q.defer<T>()
 		this._con().then(() => {
@@ -85,6 +97,19 @@ export class Collection<T extends Indexable> {
 	upsert(filter: Object, update: T, options?: Mongo.ReplaceOneOptions): Q.Promise<T> {
 		(!!options) ? options.upsert = true : options = { upsert: true }
 		return this.update(filter, update, options)
+	}
+
+	drop() {
+		let d = Q.defer<T>()
+		this._con().then(() => {
+			this.collection.drop().then(() => {
+
+			}).catch((error) => {
+				console.log('mongerror occuured while trying to drop table', this.collectionName)
+			})
+			d.resolve()
+		})
+		return d.promise
 	}
 
 	delete(filter: Object, options?: {

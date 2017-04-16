@@ -57,12 +57,16 @@ export class HTTP {
 		return this.performRequest(param)
 	}
 
-	static performRequest(body: string = ''): Q.Promise<string> {
+	static performRequest(body: any = ''): Q.Promise<string> {
 		var deferred = Q.defer<string>()
 		// var strings = ''
+		if (typeof body != 'string') {
+			body = JSON.stringify(body)
+		}
 		var data: Buffer[] = []
 		var req = http.request(this._options, (res) => {
-			// res.setEncoding('utf8')
+		    // res.setEncoding('utf8');
+
 			res.on('data', (chunk: Buffer) => {
 				data.push(chunk)
 			})

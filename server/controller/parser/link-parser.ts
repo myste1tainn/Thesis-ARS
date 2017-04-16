@@ -20,16 +20,12 @@ export class LinkParser {
 		let linkTags = $('a')
 		for (var i = linkTags.length - 1; i >= 0; i--) {
 			let link = linkTags[i].attribs['href']
-			if (link.indexOf('#') > -1) {
-				continue
-			}
-			
+			if (!!!link || link.indexOf('#') > -1) continue
 			if (link.indexOf('/') == 0) {
 				link = 'manual-velaclassic-th.readyplanet.com' + link
 			} else if (link.indexOf('manual') == -1) {
 				continue
 			}
-			
 			links.push(link)
 		}
 		return links

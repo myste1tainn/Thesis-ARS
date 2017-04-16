@@ -1,9 +1,10 @@
 import 'reflect-metadata'
+import './controller/cron/AutoReplyCron'
 import { Request, Response } from 'express'
 import { ApplicationRouter } from './routes'
 import { ApplicationRestful } from './rest'
+import { SVMRestful } from './svm.rest'
 import { DB } from './collection/db'
-import { SVMServerRun } from './svm.server'
 import * as Express from 'express'
 
 export let EXPRESS_SERVER = Express()
@@ -22,5 +23,4 @@ console.log(`log: APPLICATION server is now listening on port ${port}`)
 
 ApplicationRouter.setup(EXPRESS_SERVER)
 ApplicationRestful.setup(EXPRESS_SERVER)
-
-SVMServerRun()
+SVMRestful.setup(EXPRESS_SERVER)

@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"clie",
+				"client_secret\tproperty"
+			],
+			[
+				"passport",
+				"passport-google-oauth\texternal module name"
+			],
+			[
+				"clas",
+				"classID\tproperty"
+			],
+			[
 				"Vector",
 				"VectorCollection\tlet"
 			],
@@ -352,10 +364,6 @@
 				"EventEmitter\talias"
 			],
 			[
-				"clas",
-				"setElementClass\tmethod"
-			],
-			[
 				"Host",
 				"HostListener"
 			],
@@ -506,14 +514,6 @@
 			[
 				"pull-",
 				"pull-right"
-			],
-			[
-				"Parti",
-				"ParticipantController"
-			],
-			[
-				"quesion",
-				"questionaire"
 			]
 		]
 	},
@@ -527,10 +527,18 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 167.0,
+		"height": 354.0,
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"Ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"Error",
+				"TypeScript: Show Error List"
+			],
 			[
 				"SHow Er",
 				"TypeScript: Show Error List"
@@ -609,10 +617,6 @@
 			],
 			[
 				"ruby",
-				"Set Syntax: Ruby"
-			],
-			[
-				"Ruby",
 				"Set Syntax: Ruby"
 			],
 			[
@@ -746,10 +750,34 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Myste1tainn/Projects/Personal/thesis/app"
+		"/Users/Myste1tainn/Projects/Personal/thesis",
+		"/Users/Myste1tainn/Projects/Personal/thesis/server"
 	],
 	"file_history":
 	[
+		"/Users/Myste1tainn/Projects/Personal/thesis/server/controller/parser/link-parser.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/server/controller/parser/parser.ts",
+		"/Users/Myste1tainn/Projects/oneMobile/RSA/RoadSideAssistance/RSARoadSideAssistance.podspec",
+		"/Users/Myste1tainn/Projects/Personal/thesis/server/http/http.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/server/controller/parser/solution-parser.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/server/svm.rest.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/server/controller/gmail/gmail-client.ts",
+		"/Users/Myste1tainn/.zshrc",
+		"/Users/Myste1tainn/Projects/RSA/Thailand/Mondial/fastlane/Appfile",
+		"/Users/Myste1tainn/Projects/Personal/thesis/node_modules/node-gmail-api/index.js",
+		"/Users/Myste1tainn/Projects/Personal/thesis/server/routes.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/server/server.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/server/controller/feeder/es.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/server/controller/term-vector-list/term-vector-list.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/server/controller/svm/svm.controller.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/server/rest.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/executable/server/controller/feeder/es.js",
+		"/Users/Myste1tainn/Projects/Personal/thesis/shared/collection/vector.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/server/controller/feeder/es-feeder.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/shared/collection/solution.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/shared/collection/collection.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/shared/collection/train-dataset.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/shared/collection/trained-model.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/controller/parser/parser.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/app.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/pages/vector-view/vector-view.page.html",
@@ -854,30 +882,7 @@
 		"/Users/Myste1tainn/Projects/HealthApp/package.json",
 		"/Users/Myste1tainn/Projects/Personal/thesis/main/http.ts",
 		"/Users/Myste1tainn/Projects/oneMobile/AZUIKit/AZUIKit.podspec",
-		"/Users/Myste1tainn/Projects/Personal/thesis/podspec",
-		"/Users/Myste1tainn/Downloads/index.html",
-		"/Users/Myste1tainn/Downloads/Test-ISAdvertiserv3_sourcecode.html",
-		"/Applications/MAMP/htdocs/index.html",
-		"/Users/Myste1tainn/Projects/oneMobile/RSA/Essentials/RSAEssentials.podspec",
-		"/Users/Myste1tainn/Projects/Personal/thesis/main/collection/db.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/main/collection/model.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/main/es-feeder.ts",
-		"/Users/Myste1tainn/Desktop/signature.html",
-		"/Users/Myste1tainn/Library/Mobile Documents/com~apple~mail/Data/V4/Signatures/D51A7AB3-2227-417D-B7D1-B5E9C02AED84.mailsignature",
-		"/Users/Myste1tainn/Projects/oneMobile/AZUIKit/Example/podfile",
-		"/Users/Myste1tainn/Projects/Personal/thesis/main/collection/solutions.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/main/collections/errors.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/parser.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/collections/db.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/collections/model.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/index.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/collections/solutions.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/solution-parser.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/db.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/model.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/node_modules/@types/mongodb/index.d.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/http.ts",
-		"/Users/Myste1tainn/.zshrc"
+		"/Users/Myste1tainn/Projects/Personal/thesis/podspec"
 	],
 	"find":
 	{
@@ -888,6 +893,7 @@
 		"height": 158.0,
 		"where_history":
 		[
+			"/Users/Myste1tainn/Projects/Personal/thesis,-*.meteor/*,-*node_modules/*",
 			"/Users/Myste1tainn/Projects/Personal/thesis/app,-*.meteor/*,-*node_modules/*",
 			"/Users/Myste1tainn/Projects/Personal/thesis/app,-*.meteor/*",
 			"/Users/Myste1tainn/Projects/Personal/thesis/app,-*.meteor/*,-*node_modules/*,/Users/Myste1tainn/Projects/Personal/thesis/app/node_modules/ioinic*",
@@ -1017,6 +1023,18 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"Buffer",
+			"HTTP",
+			",",
+			": any",
+			"_index",
+			"getAllIndexes",
+			"100",
+			"createVector",
+			"response",
+			"groupID, ",
+			"groupID?: number,",
+			"TrainDataset",
 			"Request",
 			"http/routes",
 			"term-vectors-matrix",
@@ -1132,19 +1150,7 @@
 			" \n",
 			"= ",
 			"=",
-			"VIN",
-			"AZNet",
-			"parseLinks",
-			"__consumptionPool",
-			"__produce",
-			"encode",
-			"allSelected",
-			"URI",
-			"Encoding",
-			"End",
-			"encod",
-			"&amp;",
-			"&"
+			"VIN"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1297,6 +1303,70 @@
 		"selected_items":
 		[
 			[
+				"http",
+				"server/http/http.ts"
+			],
+			[
+				"parser",
+				"server/controller/parser/parser.ts"
+			],
+			[
+				"link-par",
+				"server/controller/parser/link-parser.ts"
+			],
+			[
+				"sol",
+				"server/controller/parser/solution-parser.ts"
+			],
+			[
+				"svm.ts",
+				"server/svm.rest.ts"
+			],
+			[
+				"routes.ts",
+				"server/routes.ts"
+			],
+			[
+				"sever.ts",
+				"server/server.ts"
+			],
+			[
+				"es.ts",
+				"server/controller/feeder/es.ts"
+			],
+			[
+				"vector",
+				"shared/collection/vector.ts"
+			],
+			[
+				"term",
+				"server/controller/term-vector-list/term-vector-list.ts"
+			],
+			[
+				"svm.con",
+				"server/controller/svm/svm.controller.ts"
+			],
+			[
+				"collection",
+				"shared/collection/collection.ts"
+			],
+			[
+				"trained-",
+				"shared/collection/trained-model.ts"
+			],
+			[
+				"trained",
+				"shared/collection/trained-model.ts"
+			],
+			[
+				"solution",
+				"shared/collection/solution.ts"
+			],
+			[
+				"svm",
+				"server/svm.rest.ts"
+			],
+			[
 				"t-v-m",
 				"client/components/term-vectors-matrix/term-vectors-matrix.ts"
 			],
@@ -1311,10 +1381,6 @@
 			[
 				"readme",
 				"node_modules/ionic-angular/node_modules/colors/ReadMe.md"
-			],
-			[
-				"es.ts",
-				"server/controller/feeder/es.ts"
 			],
 			[
 				"feeder",
@@ -1465,10 +1531,6 @@
 				"server/controller/parser/parser.ts"
 			],
 			[
-				"solution",
-				"server/controller/parser/solution-parser.ts"
-			],
-			[
 				"es-f",
 				"server/controller/feeder/es-feeder.ts"
 			],
@@ -1533,10 +1595,6 @@
 				"node_modules/angular2-meteor/dist/meteor_app.d.ts"
 			],
 			[
-				"http",
-				"server/http/http.ts"
-			],
-			[
 				"es-feed",
 				"server/controller/feeder/es-feeder.ts"
 			],
@@ -1555,10 +1613,6 @@
 			[
 				"es-",
 				"main/controller/feeder/es-feeder.ts"
-			],
-			[
-				"parser",
-				"main/controller/parser/parser.ts"
 			],
 			[
 				"index",
@@ -1759,54 +1813,6 @@
 			[
 				"app.var",
 				"theme/app.variables.scss"
-			],
-			[
-				"publish",
-				"app/server/publish.ts"
-			],
-			[
-				"task-list",
-				"app/client/pages/task-list/task-list.ts"
-			],
-			[
-				"tasks",
-				"app/shared/collections/tasks.ts"
-			],
-			[
-				"task-list.ts",
-				"app/client/pages/task-list/task-list.ts"
-			],
-			[
-				"tsconfig",
-				"app/tsconfig.json"
-			],
-			[
-				"ts.config",
-				"app/node_modules/angular2-meteor/examples/todos-meteor-1.3/tsconfig.json"
-			],
-			[
-				"tasks.ts",
-				"app/shared/collections/tasks.ts"
-			],
-			[
-				"task-table",
-				"app/client/components/task-table/task-table.ts"
-			],
-			[
-				"home",
-				"app/client/pages/home/home.ts"
-			],
-			[
-				"team-detail",
-				"app/client/pages/team-detail/team-detail.html"
-			],
-			[
-				"app.core",
-				"theme/app.core.scss"
-			],
-			[
-				"style",
-				"www/css/style.css"
 			]
 		],
 		"width": 0.0

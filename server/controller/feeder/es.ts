@@ -2,15 +2,23 @@ import * as Q from 'q'
 import { HTTP } from '../../http/http'
 
 export class ES {
-
+	static limit = 600
 	static url(path: string = ''): string {
 		return 'localhost:9200/thesis/' + path
 	}
 
 	static search(query: string) {
 		let d = Q.defer<any>()
-		let url = this.url('solution/_search?size=100')
-		HTTP.get(url).then((res) => {
+		let url = this.url('solution/_search?size='+ES.limit)
+		let search = { 
+			query: { 
+				multi_match: { 
+					query: query,
+					fields: ["name", "steps"]
+				} 
+			} 
+		}
+		HTTP.post(url, search).then((res) => {
 			d.resolve(res)
 		})
 		return d.promise
@@ -26,7 +34,7 @@ export class ES {
 	static getAllIndexes(replyAsObject: boolean = true): Q.Promise<any> {
 		console.log('log: getting all indexes')
 		let d = Q.defer<any>()
-		let url = this.url('solution/_search?size=100')
+		let url = this.url('solution/_search?size='+ES.limit)
 		HTTP.get(url).then((res) => {
 			console.log('log: got all indexes')
 			if (replyAsObject) {
@@ -67,6 +75,7 @@ export class ES {
 			let item = indexes.hits.hits[i]
 			ids.push(item._id)
 		}
+		console.log(ids)
 		return ids
 	}
 }
