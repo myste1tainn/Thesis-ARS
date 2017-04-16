@@ -1,0 +1,29 @@
+ion-menu ion-content {
+  background-color: white; }
+
+ion-list > .item:first-child, ion-list > ion-item-sliding:first-child .item {
+  border-top: none; }
+
+ion-card ion-list > .item:last-child .item, ion-card ion-list > ion-item-sliding:last-child .item,
+form ion-list > .item:last-child {
+  border-bottom: none; }
+
+form ion-list > .item:last-child .item-inner, form ion-list > ion-item-sliding:last-child .item .item-inner {
+  border-bottom: 1px solid #dedede; }
+
+ion-menu ion-content ion-list > .item:last-child .item-inner {
+  border-bottom: none; }
+
+ion-input.ng-invalid.ng-touched:after {
+  border-bottom: none; }
+
+ion-label[stacked],
+ion-label[floating] {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto; }
+
+.toolbar-title {
+  overflow: visible; }
+
+table {
+  font-size: 8px !important; }

@@ -1,0 +1,58 @@
+<div id="pre-processing-page">
+	<div class="row">
+		<div class="col-3">
+			<h1>Pre-processing</h1>
+			<h4>Train SVM</h4>
+			<small>train SVM with vectors matrix</small>
+		</div>
+		<div class="col-2">
+			<button class="col-12 big btn-primary fa fa-caret-square-o-right" (click)="start()">
+				Start
+			</button>
+		</div>
+		<div class="col-3" style="padding-top: 32px; font-size: 1.2em;">
+			<div class="anim col-12 hidden" [class.show]="isProcessing">
+				<i class="fa fa-cog fa-spin text-secondary"></i>
+				<small style="position: absolute; top: 3px; left: 50px;">{{ status }} {{ progress }}</small>
+			</div>
+		</div>
+	</div>
+	<br />
+	<div class="row">
+		<div class="col-12" style="overflow: auto">
+			<div class="row">
+				<div class="col-6 pad-std">
+					<table *ngIf="!!items" class="anim col-12">
+						<tr><th colspan="2">Training Parameters, Kernel: <b>RBF</b></th></tr>
+						<tr><td><b>Cost</b></td><td>{{items.params.c}}</td></tr>
+						<tr><td><b>Number of Fold</b></td><td>{{items.params.kFold}}</td></tr>
+						<tr><td><b>Gamma</b></td><td>{{items.params.gamma}}</td></tr>
+					</table>
+				</div>
+				<div class="col-6 pad-std" style="padding-right: 30px !important">
+					<table *ngIf="!!items" class="anim col-12">
+						<tr><th colspan="2">Trained Model</th></tr>
+						<tr>
+							<td><b>Number of classes / labels</b></td>
+							<td>{{items.nrClass}}</td>
+						</tr>
+						<tr>
+							<td><b>Labels</b></td>
+							<td>{{items.labels}}</td>
+						</tr>
+						<tr>
+							<td><b>NB Support Vectors</b></td>
+							<td>{{items.nbSupportVectors}}</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<table *ngIf="!!items" class="anim" style="width: 99%;">
+				<tr><th colspan="3">Support Vectors, Number of support vectors: {{items.l}}</th></tr>
+				<tr><td><b>No.</b></td><td><b>X</b></td><td><b>Y</b></td></tr>
+				<tr *ngFor="let v of items.supportVectors; let i=index;">
+					<td><b>{{i+1}}</b></td><td>{{v[0]}}</td><td>{{v[1]}}</td>
+				</tr>
+			</table>
+		</div>
+</div>

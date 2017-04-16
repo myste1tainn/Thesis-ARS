@@ -1,0 +1,32 @@
+<div id="post-processing-page">
+	<div class="row">
+		<div class="col-3">
+			<h1>Post-processing</h1>
+			<h4>Prediction</h4>
+			<small>Try predict classes from text</small>
+		</div>
+		<div class="col-2">
+			<input [(ngModel)]="inputText" placeholder="Search text.." />
+			<button class="col-12 big btn-primary fa fa-caret-square-o-right" (click)="start()" style="height: 50px !important; margin-top: 20px;">
+				Start
+			</button>
+		</div>
+		<div class="col-3" style="padding-top: 32px; font-size: 1.2em;">
+			<div class="anim col-12 hidden" [class.show]="isProcessing">
+				<i class="fa fa-cog fa-spin text-secondary"></i>
+				<small style="position: absolute; top: 3px; left: 50px;">{{ status }} {{ progress }}</small>
+			</div>
+		</div>
+	</div>
+	<br />
+	<div class="row">
+		<div class="col-12" style="overflow: auto">
+			<table *ngIf="!!items" class="anim col-12" style="width: 99%">
+				<tr><th colspan="3">Prediction results</th></tr>
+				<tr><td><b>Class</b></td><td><b>Name</b></td><td><b>Link</b></td></tr>
+				<tr *ngFor="let item of items">
+					<td>{{predictedClass}}</td><td><b>{{item._source.name}}</b></td><td><b>{{item._source.url}}</b></td>
+				</tr>
+			</table>
+		</div>
+</div>
