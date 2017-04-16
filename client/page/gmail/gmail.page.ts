@@ -16,7 +16,7 @@ export class GmailPage {
     userCode?: string
     accessToken: string
     authenURL: string
-    messages: [any]
+    messages: any[]
     error: string
     errorDetail: string
 
@@ -69,7 +69,7 @@ export class GmailPage {
         this.http.get('api/try-send-email')
         .map(res => res.json())
         .subscribe(res => {
-            console.log(error)
+            console.log(res)
         }, error => {
             console.log(error)
         })
