@@ -12,6 +12,15 @@
           "type": "text",
           "term_vector": "with_positions_offsets_payloads",
           "analyzer" : "fulltext_analyzer"
+        },"url": {
+          "type": "text",
+          "index": "not_analyzed"
+        },"superUrl": {
+          "type": "text",
+          "index": "not_analyzed"
+        },"childUrls": {
+          "type": "text",
+          "index": "not_analyzed"
         }
       }
     }
