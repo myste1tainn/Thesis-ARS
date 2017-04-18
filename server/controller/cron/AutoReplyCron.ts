@@ -116,19 +116,20 @@ export class AutomaticResponse {
 	}
 
 	queryFromMessage(message:string) {
-		if (message.indexOf('ล็อกอิน') > -1) {
-			return 'ล็อกอิน'
-		} else if (message.indexOf('สมาชิก') > -1) {
-			return 'สมาชิก'
-		} else if (message.indexOf('ตกแต่ง') > -1) {
-			return 'ตกแต่ง'
-		} else if (message.indexOf('รหัสผ่าน') > -1) {
-			return 'รหัสผ่าน'
-		} else if (message.indexOf('commerce') > -1 || message.indexOf('ขาย') > -1 || message.indexOf('สินค้า') > -1) {
-			return 'commerce'
-		} else {
-			return ""
-		}
+		return message
+		// if (message.indexOf('ล็อกอิน') > -1) {
+		// 	return 'ล็อกอิน'
+		// } else if (message.indexOf('สมาชิก') > -1) {
+		// 	return 'สมาชิก'
+		// } else if (message.indexOf('ตกแต่ง') > -1) {
+		// 	return 'ตกแต่ง'
+		// } else if (message.indexOf('รหัสผ่าน') > -1) {
+		// 	return 'รหัสผ่าน'
+		// } else if (message.indexOf('commerce') > -1 || message.indexOf('ขาย') > -1 || message.indexOf('สินค้า') > -1) {
+		// 	return 'commerce'
+		// } else {
+		// 	return ""
+		// }
 	}
 
 	sources(results:string): any[] {
