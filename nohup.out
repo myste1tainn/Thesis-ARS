@@ -1,0 +1,52 @@
+
+> angular-quickstart@1.0.0 start /Users/Myste1tainn/Projects/Personal/thesis
+> tsc && concurrently "gulp nodemon"
+
+[0] [13:16:30] 
+[0] Using gulpfile ~/Projects/Personal/thesis/gulpfile.js
+[0] [13:16:30] Starting 'scripts'...
+[0] [13:16:30] Starting 'moveIndex'...
+[0] [13:16:30] Starting 'reloadCSS'...
+[0] [13:16:30] Finished 'moveIndex' after 49 ms
+[0] [13:16:30] 
+[0] Finished 'reloadCSS' after 59 ms
+[0] [13:16:33] 
+[0] Finished 'scripts' after 3.73 s
+[0] [13:16:33] Starting 'watch'...
+[0] [13:16:35] Finished 'watch' after 2.03 s
+[0] [13:16:35] Starting 'nodemon'...
+[0] [13:16:36] 
+[0] Finished 'nodemon' after 47 ms
+[0] log: terms instantiated
+[0] log: vectors instantiated
+[0] log: solutions instantiated
+[0] log: trainedModels instantiated
+[0] log: trainData instantiated
+[0] log: messages instantiated
+[0] log: gmailInfo instantiated
+[0] log: errors instantiated
+[0] log: finding  trainedModels
+[0] log: bootstrapping express server...
+[0] log: APPLICATION server is now listening on port 3000
+[0] log: bootstrapping server routes
+[0] log: route  /welcome  to  /client/page/welcome/welcome.page.html is created.
+[0] log: route  /setup  to  /client/page/setup/setup.page.html is created.
+[0] log: route  /post-processing  to  /client/page/post-processing/post-processing.page.html is created.
+[0] log: route  /pre-processing/train-svm  to  /client/page/pre-processing/train-svm/train-svm.page.html is created.
+[0] log: route  /pre-processing/create-index  to  /client/page/pre-processing/create-index/create-index.page.html is created.
+[0] log: route  /pre-processing/pull-corpus  to  /client/page/pre-processing/pull-corpus/pull-corpus.page.html is created.
+[0] log: route  /pre-processing  to  /client/page/pre-processing/pre-processing.page.html is created.
+[0] log: route  /gmail  to  /client/page/gmail/gmail.page.html is created.
+[0] log: route  /vector-view  to  /client/page/vector-view/vector-view.page.html is created.
+[0] log: route  /control-panel  to  /client/page/control-panel/control-panel.page.html is created.
+[0] log: route  /home  to  /client/page/home/home.page.html is created.
+[0] log: all application routes has been setup
+[0] Sun, 23 Apr 2017 11:16:37 GMT express-session deprecated undefined resave option; provide resave option at executable/server/routes.js:29:20
+[0] log: all rest api are now set up
+[0] log: all SVM rest api are now set up
+[0] log: RESTORING classifier
+[0] log: finding  gmailInfo
+[0] COMPARING DATE 2017-04-18T20:04:31.436Z 2017-04-23T11:16:40.664Z
+[0] token is not valid anymore
+[0] clean
+[0] gulp nodemon exited with code 0
