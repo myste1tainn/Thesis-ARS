@@ -45,7 +45,7 @@ import { KeysPipe } from './service/KeyTransform'
         PostProcessingPage, SetupPage, WelcomePage,
         AppComponent, TermVectorMatrixComponent, SpinnerComponent, KeysPipe
     ],
-    providers: [KeysPipe]
+    providers: [KeysPipe],
     bootstrap: [AppComponent],
 })
 export class AppModule { }
