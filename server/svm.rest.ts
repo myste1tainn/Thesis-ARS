@@ -51,8 +51,8 @@ export class SVMRestful {
 		})
 		rest.post('/api/eval', (request: any, rest: any) => {
 			TrainData.find({}).then((data) => {
-				rest.ok('ok')
-				svm.eval(data)
+				let report = svm.eval(data)
+				rest.ok(report)
 			})
 		})
 		console.log('log: all SVM rest api are now set up')

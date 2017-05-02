@@ -1,0 +1,60 @@
+<div id="pre-processing-page">
+	<div class="row">
+		<div class="col-3">
+			<h1>Pre-processing</h1>
+			<h4>Evaluate SVM</h4>
+			<small>test against test data, measure efficiency</small>
+		</div>
+		<div class="col-2">
+			<button class="col-12 big btn-primary fa fa-caret-square-o-right" (click)="start()">
+				Start
+			</button>
+		</div>
+		<div class="col-3" style="padding-top: 32px; font-size: 1.2em;">
+			<div class="anim col-12 hidden" [class.show]="isProcessing">
+				<i class="fa fa-cog fa-spin text-secondary"></i>
+				<small style="position: absolute; top: 3px; left: 50px;">{{ status }} {{ progress }}</small>
+			</div>
+		</div>
+	</div>
+	<br />
+	<div class="row">
+		<div class="col-12" style="overflow: auto">
+			<div class="row">
+				<div class="col-12 pad-std" style="padding-right: 30px !important">
+					<table *ngIf="!!items" class="anim col-12">
+						<tr><th colspan="2">SVM Training Reports: Summary</th></tr>
+						<tr>
+							<td><b>F-measure</b></td>
+							<td>{{items.fscore}}</td>
+						</tr>
+						<tr>
+							<td><b>Precision</b></td>
+							<td>{{items.precision}}</td>
+						</tr>
+						<tr>
+							<td><b>Recall</b></td>
+							<td>{{items.recall}}</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-6 pad-std" style="padding-right: 30px !important" *ngFor="let entry of (classes | keys)">
+					<table class="anim col-12">
+						<tr><th colspan="2">SVM Training Reports: Class: {{entry.key}}</th></tr>
+						<tr>
+							<td><b>F-measure</b></td>
+							<td>{{entry.value.fscore}}</td>
+						</tr>
+						<tr>
+							<td><b>Precision</b></td>
+							<td>{{entry.value.precision}}</td>
+						</tr>
+						<tr>
+							<td><b>Recall</b></td>
+							<td>{{entry.value.recall}}</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+</div>
