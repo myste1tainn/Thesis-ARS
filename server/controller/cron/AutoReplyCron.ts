@@ -165,7 +165,7 @@ export class AutomaticResponse {
 			service: 'gmail',
 			auth: {
 				user: 's5807021857075@email.kmutnb.ac.th',
-				pass: '***********'
+				pass: '5807021857075'
 			}
 		})
 	}
