@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"pro",
+				"providers\tproperty"
+			],
+			[
+				"fs",
+				"fscore\tlet"
+			],
+			[
+				"fsco",
+				"fscoreAvg\tlocal var"
+			],
+			[
 				"over",
 				"overflow"
 			],
@@ -30,10 +42,6 @@
 			[
 				"pr",
 				"progress\tproperty"
-			],
-			[
-				"pro",
-				"progressService\tproperty"
 			],
 			[
 				"Progre",
@@ -506,19 +514,46 @@
 			[
 				"menu",
 				"menuToggle"
-			],
-			[
-				"userService",
-				"userService.load"
-			],
-			[
-				"border",
-				"border-radius"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "client/page/pre-processing/eval-svm/eval-svm.page.html",
+			"settings":
+			{
+				"buffer_size": 1774,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/page/pre-processing/eval-svm/eval-svm.page.ts",
+			"settings":
+			{
+				"buffer_size": 1523,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app.module.ts",
+			"settings":
+			{
+				"buffer_size": 2813,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/service/KeyTransform.ts",
+			"settings":
+			{
+				"buffer_size": 291,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -533,7 +568,7 @@
 		[
 			[
 				"JSON",
-				"JSON Reindent: reindent file or selection"
+				"Set Syntax: JSON"
 			],
 			[
 				"REin",
@@ -759,18 +794,35 @@
 	"expanded_folders":
 	[
 		"/Users/Myste1tainn/Projects/Personal/thesis",
+		"/Users/Myste1tainn/Projects/Personal/thesis/client",
+		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/pre-processing/eval-svm",
+		"/Users/Myste1tainn/Projects/Personal/thesis/client/service",
 		"/Users/Myste1tainn/Projects/Personal/thesis/server",
 		"/Users/Myste1tainn/Projects/Personal/thesis/server/controller"
 	],
 	"file_history":
 	[
-		"/Users/Myste1tainn/Documents/A4Y/mock/mock-cusomter.json",
+		"/Users/Myste1tainn/Projects/Personal/thesis/client/service/KeyTransform.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/pre-processing/pre-processing.page.html",
+		"/Users/Myste1tainn/Projects/Personal/thesis/server/controller/svm/svm.controller.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/pre-processing/eval-svm/eval-svm.page.html",
+		"/Users/Myste1tainn/Projects/Personal/thesis/client/app.module.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/pre-processing/eval-svm/eval-svm.page.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/server/svm.rest.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/client/main.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/home/home.page.html",
+		"/Users/Myste1tainn/Projects/Personal/thesis/index.html",
+		"/Users/Myste1tainn/Projects/Personal/thesis/shared/collection/train-dataset.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/server/controller/gmail/gmail-client.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/server/controller/cron/AutoReplyCron.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/gulpfile.js",
+		"/Users/Myste1tainn/Projects/Personal/thesis/server/server.ts",
+		"/Users/Myste1tainn/Projects/Personal/thesis/package.json",
+		"/Users/Myste1tainn/ptc-cert/de-amos-arnon_keereena.p12.pph",
+		"/Users/Myste1tainn/Documents/A4Y/mock/mock-cusomter.json",
 		"/Users/Myste1tainn/Projects/Personal/thesis/server/routes.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/gmail/gmail.page.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/server/controller/gmail/gmail-client.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/gmail/gmail.page.html",
-		"/Users/Myste1tainn/Projects/Personal/thesis/index.html",
 		"/Users/Myste1tainn/Projects/Personal/thesis/server/controller/feeder/es-feeder.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/server/controller/feeder/es.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/server/rest.ts",
@@ -780,23 +832,17 @@
 		"/Users/Myste1tainn/Projects/Personal/thesis/shared/collection/collection.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/style/app.css",
 		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/post-processing/post-processing.page.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/client/app.module.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/home/home.page.html",
 		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/post-processing/post-processing.page.html",
 		"/Users/Myste1tainn/Projects/Personal/thesis/server/controller/term-vector-list/term-vector-list.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/server/svm.rest.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/pre-processing/train-svm/train-svm.page.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/pre-processing/create-index/create-index.page.html",
 		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/pre-processing/create-index/create-index.page.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/pre-processing/train-svm/train-svm.page.html",
 		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/pre-processing/pull-corpus/pull-corpus.page.html",
-		"/Users/Myste1tainn/Projects/Personal/thesis/server/server.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/server/svm.server.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/executable/server/svm.server.js",
-		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/pre-processing/pre-processing.page.html",
 		"/Users/Myste1tainn/Projects/Personal/thesis/executable/client/app.module.js",
 		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/pre-processing/pull-corpus/pull-corpus.page.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/client/main.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/pre-processing/create-vector/create-vector.page.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/client/page/pre-processing/pre-processing.page.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/tsconfig.json",
@@ -834,11 +880,9 @@
 		"/Users/Myste1tainn/.zshrc",
 		"/Users/Myste1tainn/Projects/RSA/Thailand/Mondial/fastlane/Appfile",
 		"/Users/Myste1tainn/Projects/Personal/thesis/node_modules/node-gmail-api/index.js",
-		"/Users/Myste1tainn/Projects/Personal/thesis/server/controller/svm/svm.controller.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/executable/server/controller/feeder/es.js",
 		"/Users/Myste1tainn/Projects/Personal/thesis/shared/collection/vector.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/shared/collection/solution.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/shared/collection/train-dataset.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/shared/collection/trained-model.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/controller/parser/parser.ts",
 		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/app.ts",
@@ -885,13 +929,7 @@
 		"/Users/Myste1tainn/Projects/Personal/thesis/app/.meteor/local/build/programs/server/npm/node_modules/meteor/npm-mongo/node_modules/mongodb-core/lib/error.js",
 		"/Users/Myste1tainn/.meteor/packages/iron_router/.1.0.13.1vsv90f++os+web.browser+web.cordova/npm/node_modules/body-parser/node_modules/depd/index.js",
 		"/Users/Myste1tainn/Projects/Personal/thesis/config/development/settings.json",
-		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/collection/model.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/collection/solutions.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/collection/db.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/controller/parser/solution-parser.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/app/.meteor/local/build/programs/server/app/app.js",
-		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/components/newcomponent/term-vectors-matrix.ts",
-		"/Users/Myste1tainn/Projects/Personal/thesis/app/client/components/newcomponent/term-vectors-matrix.html"
+		"/Users/Myste1tainn/Projects/Personal/thesis/app/server/collection/model.ts"
 	],
 	"find":
 	{
@@ -902,6 +940,7 @@
 		"height": 158.0,
 		"where_history":
 		[
+			"/Users/Myste1tainn/Projects/Personal/thesis,-*.meteor/*,-*node_modules/*,-*.js",
 			"/Users/Myste1tainn/Projects/Personal/thesis,-*.meteor/*,-*.node_modules/*,-*.js",
 			"/Users/Myste1tainn/Projects/Personal/thesis,-*.meteor/*,-*.node_modules/*",
 			"/Users/Myste1tainn/Projects/Personal/thesis,-*.meteor/*",
@@ -1035,6 +1074,19 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"reacall",
+			"Train",
+			"train",
+			"svm.eval",
+			"/Users/Myste1tainn/Desktop/",
+			"writeFile",
+			"fs",
+			"\"",
+			"INDEX_SETTINGS",
+			"settingsPath",
+			"&",
+			"https://api-test.allianz.com/sts/oauth/token?grant_type=partner&username=%2B49789789789200&token=f3520a754d600969038652ddf2d16d9eb23b98265a2668cc9dc67da90092e9e6&client_id=wd.client.ios&partner=wirecard&brand_name=Allianz4you",
+			"main.js",
 			"U27",
 			"444457",
 			"U26",
@@ -1149,20 +1201,7 @@
 			"col-md-5",
 			"md",
 			"div",
-			"nav",
-			"column",
-			"Angular QuickStart",
-			"Angular Quickstart",
-			"title=\"md\"",
-			"title=\"ios\"",
-			"md-col",
-			"*/",
-			"setup",
-			"stylesheets",
-			"processing",
-			"pre",
-			"gmail",
-			"pre-processing"
+			"nav"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1247,14 +1286,166 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "client/page/pre-processing/eval-svm/eval-svm.page.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1774,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1427,
+								1427
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Palenight.tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 477.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "client/page/pre-processing/eval-svm/eval-svm.page.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1523,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								498,
+								498
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 118.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/app.module.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2813,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1397,
+								1397
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 98.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "client/service/KeyTransform.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								214,
+								214
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 70.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -1307,7 +1498,7 @@
 	"project": "thesis.sublime-project",
 	"replace":
 	{
-		"height": 114.0
+		"height": 58.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1316,6 +1507,62 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"ky",
+				"client/service/KeyTransform.ts"
+			],
+			[
+				"svm.con",
+				"server/controller/svm/svm.controller.ts"
+			],
+			[
+				"svm.rest",
+				"server/svm.rest.ts"
+			],
+			[
+				"eval-svm",
+				"client/page/pre-processing/eval-svm/eval-svm.page.ts"
+			],
+			[
+				"main.",
+				"client/main.ts"
+			],
+			[
+				"main.ts",
+				"client/main.ts"
+			],
+			[
+				"home",
+				"client/page/home/home.page.html"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"svm",
+				"server/svm.rest.ts"
+			],
+			[
+				"gmail",
+				"server/controller/gmail/gmail-client.ts"
+			],
+			[
+				"auto",
+				"server/controller/cron/AutoReplyCron.ts"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"serv.ets",
+				"server/server.ts"
+			],
 			[
 				"au",
 				"server/controller/cron/AutoReplyCron.ts"
@@ -1327,10 +1574,6 @@
 			[
 				"gmail-cli",
 				"server/controller/gmail/gmail-client.ts"
-			],
-			[
-				"index",
-				"index.html"
 			],
 			[
 				"es.ts",
@@ -1353,14 +1596,6 @@
 				"shared/collection/collection.ts"
 			],
 			[
-				"auto",
-				"server/controller/cron/AutoReplyCron.ts"
-			],
-			[
-				"gmail",
-				"server/controller/gmail/gmail-client.ts"
-			],
-			[
 				"",
 				"server/rest.ts"
 			],
@@ -1379,10 +1614,6 @@
 			[
 				"post",
 				"client/page/post-processing/post-processing.page.ts"
-			],
-			[
-				"home",
-				"client/page/home/home.page.html"
 			],
 			[
 				"app.mou",
@@ -1423,10 +1654,6 @@
 			[
 				"collection.ts",
 				"shared/collection/collection.ts"
-			],
-			[
-				"svm.rest",
-				"server/svm.rest.ts"
 			],
 			[
 				"app.cs",
@@ -1621,20 +1848,12 @@
 				"server/controller/term-vector-list/term-vector-list.ts"
 			],
 			[
-				"svm.con",
-				"server/controller/svm/svm.controller.ts"
-			],
-			[
 				"trained-",
 				"shared/collection/trained-model.ts"
 			],
 			[
 				"trained",
 				"shared/collection/trained-model.ts"
-			],
-			[
-				"svm",
-				"server/svm.rest.ts"
 			],
 			[
 				"t-v-m",
@@ -1765,10 +1984,6 @@
 				"client/app.ts"
 			],
 			[
-				"main.ts",
-				"server/main.ts"
-			],
-			[
 				"ionic-app",
 				"client/lib/_meteor-ionic-app.ts"
 			],
@@ -1803,30 +2018,6 @@
 			[
 				"es-fee",
 				"server/controller/feeder/es-feeder.ts"
-			],
-			[
-				"pub",
-				"server/publish.ts"
-			],
-			[
-				"term-ve-",
-				"server/controller/term-vector-list/term-vector-list.ts"
-			],
-			[
-				"es-feeder",
-				"server/controller/feeder/es-feeder.ts"
-			],
-			[
-				"maints",
-				"server/main.ts"
-			],
-			[
-				"control.html",
-				"client/pages/control-panel/control-panel.html"
-			],
-			[
-				"control.ts",
-				"node_modules/@angular/forms/src/directives/ng_control.d.ts"
 			]
 		],
 		"width": 0.0

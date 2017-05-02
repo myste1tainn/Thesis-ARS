@@ -13,11 +13,13 @@ import { PreProcessingPage }  from './page/pre-processing/pre-processing.page'
 import { PullCorpusPage }  from './page/pre-processing/pull-corpus/pull-corpus.page'
 import { CreateIndexPage }  from './page/pre-processing/create-index/create-index.page'
 import { TrainSVMPage }  from './page/pre-processing/train-svm/train-svm.page'
+import { EvalSVMPage }  from './page/pre-processing/eval-svm/eval-svm.page'
 import { PostProcessingPage }  from './page/post-processing/post-processing.page'
 import { SetupPage }  from './page/setup/setup.page'
 import { WelcomePage }  from './page/welcome/welcome.page'
 import { TermVectorMatrixComponent }  from './component/term-vectors-matrix/term-vectors-matrix.component'
 import { CustomBrowserXhr } from './service/CustomBroswerXhr'
+import { KeysPipe } from './service/KeyTransform'
 
 @NgModule({
     imports:      [BrowserModule, HttpModule, FormsModule,
@@ -30,6 +32,7 @@ import { CustomBrowserXhr } from './service/CustomBroswerXhr'
                                 { path: 'pull-corpus', component: PullCorpusPage },
                                 { path: 'create-index', component: CreateIndexPage },
                                 { path: 'train-svm', component: TrainSVMPage },
+                                { path: 'eval-svm', component: EvalSVMPage },
                             ] },
                             { path: 'post-processing', component: PostProcessingPage },
                             { path: 'setup', component: GmailPage },
@@ -38,10 +41,11 @@ import { CustomBrowserXhr } from './service/CustomBroswerXhr'
                     ])],
     declarations: [
         HomePage, ControlPanelPage, VectorViewPage, GmailPage, 
-        PreProcessingPage, PullCorpusPage, CreateIndexPage, TrainSVMPage,
+        PreProcessingPage, PullCorpusPage, CreateIndexPage, TrainSVMPage, EvalSVMPage,
         PostProcessingPage, SetupPage, WelcomePage,
-        AppComponent, TermVectorMatrixComponent, SpinnerComponent
+        AppComponent, TermVectorMatrixComponent, SpinnerComponent, KeysPipe
     ],
+    providers: [KeysPipe]
     bootstrap: [AppComponent],
 })
 export class AppModule { }
