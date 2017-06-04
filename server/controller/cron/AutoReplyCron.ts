@@ -72,14 +72,41 @@ export class AutomaticResponse {
 				console.log('ERROR: query is empty')
 				return
 			} else {
+				console.log(payload.headers)
 				let froms = payload.headers.filter((o:any) => { return o.name == 'From' })
 				let subjects = payload.headers.filter((o:any) => { return o.name == 'Subject' })
 				let ids = payload.headers.filter((o:any) => { return o.name == 'Message-Id' })
 				let senderAddress = froms[0].value
+				if (ids.length == 0) {
+					ids = payload.headers.filter((o:any) => { return o.name == 'Message-ID' })
+				}
 				ES.limit = 10
+
+				console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+				console.log("search with")
+				console.log(query)
+				console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+
 				ES.search(query).then((results) => {
+					console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+					console.log("result is coming")
+					console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")					
 					let sources = this.sources(results)
 					let html = this.html(sources)
+
+					console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+					console.log("HTML")
+					console.log(html)
+					console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")					
+
+					console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+					console.log("SOURCE")
+					console.log(GMAIL_USER_ID)
+					console.log(senderAddress)
+					console.log(ids)
+					console.log(`Re: ${subjects[0].value}`)
+					console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")					
+
 					let options = {
 						from: GMAIL_USER_ID, // sender address
 						to: senderAddress, // list of receivers
@@ -90,7 +117,13 @@ export class AutomaticResponse {
 						html: html // html body
 					}
 
+					console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+					console.log("trying to send mail with")
+					console.log(options)
+					console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+
 					this.transporter.sendMail(options, (error:any, info:any) => {
+						console.log(error, info)
 						if (!!error) {
 							console.log('ERROR: send mail error', error)
 						} else {
@@ -98,7 +131,12 @@ export class AutomaticResponse {
 						}
 					})
 
-				}, Error.handle(404, d))
+				}, error => {
+					console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+					console.log("ERROR")
+					console.log(error)
+					console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+				})
 			}
 			console.log('####################################################')
 		})
